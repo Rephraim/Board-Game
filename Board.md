@@ -1,1 +1,3 @@
-public class Board {
+public interface Board {
+
+  
