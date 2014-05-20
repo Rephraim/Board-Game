@@ -33,7 +33,7 @@ public class Player {
     return name;
   }
   
-  public void changeTardies(int change) {
+  public void changeTardies(int change) {       //change the player's stats as they get events
     tardies += change;
   }
   
