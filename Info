@@ -1,0 +1,157 @@
+Board game: Senior Year (Senioritis)
+ 
+Format: Based off of the Game of Life
+ Roll dice = number of moves
+Guaranteed Stops @ required steps
+ Minigames
+Statistics: # tardies & academics & $$$ & happiness.  Start 50 each (tardies 0)
+Too many tardies -> cannot attend Graduation/tardy intervention
+Low academics -> get rescinded
+Low $$$ -> college loans
+Low happiness -> life suxs for u
+ 
+Required Stops:
+College Applications
+College Decisions
+UC=maintain GPA
+Private=???
+Ohlone?
+Ashland
+Senior Ball
+Do you get a date?
+Graduation
+Finals
+Grad nite
+ 
+Optional Squares:
+Wake up late / early
+Do HW or not
+Ditch school or not
+Go out for lunch
+Attend dances
+Waterworld
+Senior Ditch Day
+
+
+
+
+
+
+Content: (36 squares)
+1. First day of school!  How many AP classes are you taking?
+    a) How about no: academics - 2; happiness + 10
+    b) Not too many…: academics + 2; happiness + 0
+    c) Six. AP gov/econ!!!: academics + 4; happiness - 5
+2. 8 AM, waking up in the morning. Gotta be fresh, gotta go downstairs. Oh wait, its not Wednesday. tardies + 1
+3. You’ve been craving bagel sandwiches, so you go out to lunch.  As a result you are late to fifth period.  $$$ - 3; happiness + 5; tardies + 1
+4. All your friends are going to Waterworld.  Are you?
+    a) Hell yeah! $$$ - 10; happiness + 10
+    b) Nah, too expensive. happiness - 2
+    c) I think I’ll go to Berkeley instead. tardies + 1; $$$ - 5; happiness + 5
+5. Oh no...You forgot to do that one assignment worth 20% of your grade. You…
+    a) cram it in during read. academics - 2; happiness - 3
+    b) ask the teacher for an extension. academics - 5
+    c) screw it and play League instead. academics - 10; happiness + 5
+6. College applications…. do I have to? :(
+    a) Yes. happiness - 10
+    b) ….yes. happiness - 15
+7. Hey…. there’s a five on the ground!  $$$ + 5, happiness + 2
+8. You’ve been down with the flu for a week.  tardies + 5; academics - 2; happiness - 2
+9. Brace yourself. Winter ball is coming!  Got a date?
+    a) Yeah. happiness + 10; $$$ - 10
+    b) Nah, stag 5 life!!!  happiness + 5; $$$ - 5
+    c) No, gotta stay home and study for one thing or another.  happiness - 3; academics + 3
+10. Economics field trip! Do you go?
+    a) Obviously. $$$ -3, happiness +5
+    b) No, I can’t miss class. academics +3, happiness -2
+    c) Heck no, Compsci field trip that day! #brucker4lyfe $$$ -3, happiness +7
+11. Time for Mock Con! Who do you vote for?
+    a) Jerry Wu. He has candy. $$$ +1
+    b) Werry Ju. happiness +2
+    d) Vote Radical! happiness +5
+12. During winter break you go skiing and bust your tailbone. #ffang #QQ  happiness -5
+13. Winter break is for..?
+    a) Cramming for college apps! happiness -2, academics +3
+    b) Finish a buttload of DeviantArt commissions. #terri happiness + 3, $$$ + 5, academics -3
+    c) Flappy Bird! happiness -2, academics -3
+14. You did it, made it to second semester. #SSS happiness + 5
+15. You woke up too early, lowering your blood sugar levels.  happiness - 5
+16. Need a little bit more spending money. Do you…
+    a) ask your parents for money?  $$$ + 5, happiness - 2 
+    b) get a job? academics -3, $$$ + 10
+    c) do nothing? happiness -2
+17. You have to cram for a huge physics midterm. happiness -10, academics +5
+18. Ashland’s coming up. Are you going?
+    a) Of course! Shakespeare ftw! $$$ -3, happiness +5, academics +2
+    b) Yaaay ice cream! $$$ -4; happiness +5
+    c) Nahh, that’s three days of missing school. happiness -2
+19. What a nice day it is today….
+    a) Lets go hang out at Snowflake! tardies + 3; happiness + 10
+    b) You’ll stay home and have your parents call in sick. tardies + 1; happiness + 5
+    c) But there’s school today! happiness - 2
+20. You watch Frozen for the millionth time. #werryju happiness +2
+21. “Let it Go” gets stuck in your head for the millionth time. Goodbye concentration. #ctong academics -2 
+22. Senior Ball is at CA Academy of Sciences!  Are you excited?
+    a) Yeahhh! Gonna look spiffy with my date!  happiness + 10; $$$ - 20
+    b) Yay fishies. happiness + 7; $$$ -10
+    c) Ew. happiness -2
+23. Lets make a page dedicated to 2048 trololol. #lewischen happiness +2
+24. AP Computer Science project due tomorrow. How much do you more work do you have to do?
+    a) Do you think I actually started? #SSS happiness -3, academics -10
+    b) Submitted it yesterday, fools! happiness + 3, academics + 5
+    c) What project? My job is to tell you to “close your laptops”. # werryju
+25. The legendary Senior Ditch Day has arrived.
+    a) Party it up at the beach! Whooo! happiness + 10, tardies + 5
+    b) My parents made me go to school. #cry happiness -5
+    c) Go shopping for more ties. #aiden happiness +5, $$$ -3
+26. You got caught up in a Facebook poke war. academics -3, happiness +3
+27. You made it to spring break. Got any plans?
+    a) College visits! #berkeleyclassof2018 $$$ -5
+    b) Study for APs. #cry academics +5, happiness -3
+    c) Sleep all day, everyday. happiness + 5
+28. Oh no! You haven’t turned in any service learning forms and they’re due in 5 minutes. As you turn them in, the bell for 6th rings. tardies +1
+29. Such grammar.  Much internet.  Very doge. academics -3
+30. Ugh! You just can’t get 2048, so you…
+    a) make an AI for it. #werryju happiness + 5
+    b) keep trying! #neversaynever academics -5, happiness +3
+    c) rage quit.  happiness -2
+31. You have to decide between going to Yale or Stanford. What do you do?
+    a) Use a random number generator, obviously. #werryju happiness +5
+    b) Stanford, because Connecticut is super boring. happiness +3
+    c) Yale, because New Haven has delicious pizza. happiness +3
+32. Darn, your neighbor was blasting Justin Bieber and One Direction at 3 AM!  happiness -3
+33. Entire weekend spent on Tumblr. #worth  happiness + 5, academics -3
+34. Awww shitake mushrooms, it’s finals week.
+    a) It’s cool, I’ve been studying regularly!  academics +5
+    b)….Already? Brb cramming.  academics + 3; happiness - 2
+    c) Whatever. academics - 5; happiness + 3
+35. Grad night at Disneyland! Do you go?
+    a) Heck yeeees! happiness + 10, $$$ - 10
+    b) Woody scares me. happiness -3
+    c) Bye guys, off to Asia.  happiness +15; $$$ -15
+35. You made it! You finished senior year, but did you graduate?
+
+Endings : 
+[have them input a name in the beginning] -Name-! Finally it’s your turn to graduate. Don’t trip now.
+
+Tardies:
+<10 - Wow, what kind of senior are you?
+10-20 - You have to attend one of those Tardy Intervention things… But I guess it could be worse.
+>20 - Sorry dude, they’re not letting you walk at graduation because of your horrendous attendance record.
+
+Academics:
+<25 - You don’t have enough units to graduate.  I guess you have to go through the fire again….
+26-50 - You get rescinded!  Ohlone should be accepting more students.
+>50 - Good job, you graduated!
+
+$$$:
+<10 - You have literally no money. Maybe you should drop college for a garbage-truck-driving job.  I heard they pay pretty well.
+11-30 -  Goodbye carefree teenage years, hello college loans. Make sure to stock up on ramen.
+31-50 - You’ll get through college okay, but grad school may be an issue...
+>50 - Pfffft, loans?  You’re loaded!
+
+Happiness:
+ <10 - You cry yourself to sleep every night while scrolling through Tumblr.
+11-30 - You wonder what you’re doing with your life, but console yourself with steamed meat buns.
+31-50 - Life is swell, but the future scares the soles off your feet.
+>50 - A+ for having an awesome life. #yoloswag
