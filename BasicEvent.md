@@ -34,4 +34,8 @@ public class BasicEvent {
   public int getChangeA() {
     return changeA;
   }
+  
+  public boolean getIsRequired() {
+    return isRequired;
+  }
 }
