@@ -1,9 +1,9 @@
 public class Player {
-  public int tardies;
-  public int money;
-  public int happiness;
-  public int academics;
-  public String name;
+  private int tardies;
+  private int money;
+  private int happiness;
+  private int academics;
+  private String name;
   
   public Player (String name) {
     tardies = 0;
