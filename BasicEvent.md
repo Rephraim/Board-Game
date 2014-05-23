@@ -1,9 +1,9 @@
 public class BasicEvent {
-  public String descrip;
-  public int changeT;       //all the data of an event
-  public int changeM;
-  public int changeH;
-  public int changeA;
+  private String descrip;
+  private int changeT;       //all the data of an event
+  private int changeM;
+  private int changeH;
+  private int changeA;
 
   public Event(String title, int t, int m, int h, int a) {
     descrip = title;
