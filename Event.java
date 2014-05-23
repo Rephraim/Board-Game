@@ -1,4 +1,5 @@
-public class BasicEvent {
+public class Event {
+
   private String descrip;
   private int changeT;       //all the data of an event
   private int changeM;
@@ -38,4 +39,6 @@ public class BasicEvent {
   public boolean getIsRequired() {
     return isRequired;
   }
+
+
 }
