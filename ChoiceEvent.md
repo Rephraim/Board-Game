@@ -1,7 +1,7 @@
 public class ChoiceEvent extends BasicEvent() {
-  public String choice1;
-  public String choice2;
-  public String choice3;
+  private String choice1;
+  private String choice2;
+  private String choice3;
   
   public ChoiceEvent (String c1, String c2, String c3) {
     choice1 = c1;
