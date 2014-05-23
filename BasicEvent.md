@@ -4,13 +4,15 @@ public class BasicEvent {
   private int changeM;
   private int changeH;
   private int changeA;
+  private boolean isRequired;
 
-  public Event(String title, int t, int m, int h, int a) {
+  public Event(String title, int t, int m, int h, int a, boolean required) {
     descrip = title;
     changeT = t;
     changeM = m;
     changeH = h;
     changeA = a;
+    isRequired = required;
   }
   
   public String getDescrip() {
