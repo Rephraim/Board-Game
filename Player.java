@@ -41,11 +41,11 @@ public class Player {
     money += change;
   }
   
-  public void changeHappiness() {
+  public void changeHappiness(int change) {
     happiness += change;
   }
   
-  public void changeAcademics() {
+  public void changeAcademics(int change) {
     academics += change;
   }
 }

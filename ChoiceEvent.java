@@ -1,4 +1,4 @@
-public class ChoiceEvent extends BasicEvent() {
+public class ChoiceEvent extends Event() {
   private String choice1;
   private String choice2;
   private String choice3;
