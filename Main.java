@@ -13,7 +13,7 @@ public class Main {
 	}
 
 	public int rollDice(){
-		return (int)Math.random()*6 + 1;
+		return (int)Math.random()*4 + 1;
 	}
 
 	public void parseEvents(){
