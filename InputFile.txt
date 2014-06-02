@@ -2,13 +2,13 @@
 First day of school!  How many AP classes are you taking?
 Y
 How about no
-academics -2, happiness +10
+happiness +10, academics -2
 0 0 10 -2
 Not too many…
 academics +2
 0 0 0 2
 Six. AP gov/econ!!! 
-academics +4, happiness -5
+happiness -5, academics +4
 0 0 -5 4
 
 
@@ -30,13 +30,13 @@ tardies +1, happiness -2
 You’ve been craving _______________, so you go out to lunch.  As a result you are late to fifth period.  
 N
 Bagel sandwiches
-$$$ -3, happiness +5, tardies +1
+tardies +1, $$$ -3, happiness +5
 1 -3 5 0
 Chipotle
-$$$ -5, happiness +5, tardies +1
+tardies +1, $$$ -5, happiness +5
 1 -5 5 0
 Eastern Winds
-$$$ -4, happiness +5, tardies +1
+tardies +1, $$$ -4, happiness +5
 1 -4 5 0
 
 
@@ -57,13 +57,13 @@ tardies +1, $$$ -5, happiness +5
 Oh no...You forgot to do that one assignment worth 20% of your grade. You…
 Y
 cram it in during read. 
-academics -2, happiness -3
+happiness -3, academics -2
 0 0 -3 -2
 ask the teacher for an extension. 
 academics -5
 0 0 0 -5
 screw it and play League instead. 
-academics -10, happiness +5
+happiness +5, academics -10
 0 0 5 -10
 
 
