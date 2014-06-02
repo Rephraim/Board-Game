@@ -19,6 +19,14 @@ public class Main {
 	public void parseEvents(){
 			File file = new File("InputFile.txt");
 			Scanner input = new Scanner(file);
+			Event e=null;
+
+			events.add(null);
+			for (int i=1; i<36; i++){
+					e = new Event()
+					events.add( new Event() )
+			}
+
 
 
 	}
