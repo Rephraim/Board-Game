@@ -55,8 +55,25 @@ public class BoardTile extends JFrame {
 			p.changeMoney(d1.getChangeM());
 			p.changeHappiness(d1.getChangeH());
 			p.changeAcademics(d1.getChangeA());
-			JOptionPane.showMessageDialog(frame,"This is your updated score: \n" + "Tardies: " + p.getTardies() + "\n" + "Money:" + p.getMoney() + "\n" + "Happiness:" + p.getHappiness() + "\n" + "Academics: " + p.getAcademics(), "Option A", JOptionPane.PLAIN_MESSAGE);
+			JOptionPane.showMessageDialog(null, d1.getStatChanges, "Option A", JOptionPane.PLAIN_MESSAGE);
 		}
 	}
-	
+	private class bbuttonListener implements ActionListener {
+		public void actionPerformed(ActionEvent e) {
+			p.changeTardies(d2.getChangeT());
+			p.changeMoney(d2.getChangeM());
+			p.changeHappiness(d2.getChangeH());
+			p.changeAcademics(d2.getChangeA());
+			JOptionPane.showMessageDialog(null, d2.getStatChanges, "Option B", JOptionPane.PLAIN_MESSAGE);
+		}
+	}
+	private class cbuttonListener implements ActionListener {
+		public void actionPerformed(ActionEvent e) {
+			p.changeTardies(d3.getChangeT());
+			p.changeMoney(d3.getChangeM());
+			p.changeHappiness(d3.getChangeH());
+			p.changeAcademics(d3.getChangeA());
+			JOptionPane.showMessageDialog(null, d3.getStatChanges, "Option C", JOptionPane.PLAIN_MESSAGE);
+		}
+	}
 }
