@@ -5,40 +5,31 @@ public class Event {
   private int changeM;
   private int changeH;
   private int changeA;
-  private boolean isRequired;
+  
+  private Option choiceA;
+  private Option choiceB;
+  private Option choiceC;
 
-  public Event(String title, int t, int m, int h, int a, boolean required) {
+  public Event(String title, Option c1, Option c2, Option c3) {
     descrip = title;
-    changeT = t;
-    changeM = m;
-    changeH = h;
-    changeA = a;
-    isRequired = required;
+    choiceA = c1;
+    choiceB = c2;
+    choiceC = c3;
   }
   
   public String getDescrip() {
-    returns descrip;
-  }
-  
-  public int getChangeT() {
-    return changeT;
-  }
-  
-  public int getChangeM() {
-    return changeM;
-  }
-  
-  public int getChangeH() {
-    return changeH;
-  }
-  
-  public int getChangeA() {
-    return changeA;
-  }
-  
-  public boolean getIsRequired() {
-    return isRequired;
+    return descrip;
   }
 
+  public Option getChoiceA() {
+    return choiceA;
+  }
 
+  public Option getChoiceB() {
+    return choiceB;
+  }
+  
+  public Option getChoiceC() {
+    return choiceC;
+  }
 }
