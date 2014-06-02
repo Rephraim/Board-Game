@@ -1,20 +1,19 @@
 public class Event {
 
   private String descrip;
-  private int changeT;       //all the data of an event
-  private int changeM;
-  private int changeH;
-  private int changeA;
-  
+
   private Option choiceA;
   private Option choiceB;
   private Option choiceC;
+  
+  private boolean isRequired;
 
-  public Event(String title, Option c1, Option c2, Option c3) {
+  public Event(String title, Option c1, Option c2, Option c3, boolean req) {
     descrip = title;
     choiceA = c1;
     choiceB = c2;
     choiceC = c3;
+    isRequired = req;
   }
   
   public String getDescrip() {
@@ -31,5 +30,9 @@ public class Event {
   
   public Option getChoiceC() {
     return choiceC;
+  }
+  
+  public boolean getRequirement() {
+    return isRequired;
   }
 }
