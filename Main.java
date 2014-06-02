@@ -9,7 +9,8 @@ public class Main {
 
 		System.out.print("Player Name: ");
 		Player player = new Player( console.next() );
-
+		parseEvents();
+		Board board = new Board(player, events);
 	}
 
 	public int rollDice(){
