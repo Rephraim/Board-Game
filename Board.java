@@ -25,6 +25,7 @@ public class Board extends JFrame {
   		events = e;
   		currentSquare = 0;
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		buildInstructions();
 		buildWindow();
 		setVisible(true);
 		//MISC OTHER CONSTRUCTION!!!!!!!!!!!!!!!!!!!!!!!
@@ -50,19 +51,7 @@ public class Board extends JFrame {
 		mainPanel.add(label4);
 		mainPanel.add(label5);
 		
-		JPanel secondPanel =  new JPanel();
-		JLabel name = new JLabel("What's your name?");
-		JTextField playerName = new JTextField(15);
-		JButton startGame = new JButton("START");
-		
-		startGame.addActionListener(new startGameListener);
-		
-		secondPanel.add(name);
-		secondPanel.add(playerName);
-		secondPanel.add(startGame);
-		
 		add(mainPanel);
-		add(secondPanel);
 	}
 	
 	private void buildWindow() {
@@ -138,13 +127,6 @@ public class Board extends JFrame {
 			} else {
 				lastSquare();
 			}
-		}
-	}
-	
-	private class startGameListener implements ActionListener {
-		
-		public void actionPerformed(ActionEvent e) {
-			Player player = new Player(playerName.getText());
 		}
 	}
 }
