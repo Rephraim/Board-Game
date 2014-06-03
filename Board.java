@@ -82,12 +82,15 @@ public class Board extends JFrame() {
 	private void move() {
 		//create boardtile with given number
 		currentSquare += rollDice();
+		invalidate();
+		validate();
 		currentTile = new BoardTile(currentSquare, events, player);
 	}
 	
 	private void lastSquare() {
-		currentSquare = -1;
-		LastSquare tile = new LastSquare (player);
+		//pop up new lastSquare jframe
+		//which displays everything
+		//end game?
 	}
 	
 	private class rollListener extends JButton implements ActionListener {
@@ -96,9 +99,7 @@ public class Board extends JFrame() {
 			addActionListener(this);
 		}
 		public void actionPerformed(ActionEvent e) {
-			if (currentSquare = -1) {
-				return;
-			} else if (rollDice() + currentSquare < 36) {
+			if (rollDice() + currentSquare < 36) {
 				move();
 			} else {
 				lastSquare();
