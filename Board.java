@@ -27,11 +27,33 @@ public class Board extends JFrame() {
 
 	private void buildWindow() {
 		JPanel mainPanel = new JPanel();
+		JPanel gridPanel = new JPanel();
+		gridPanel.setBorder(BorderFactory.createEmptyBorder(5, 5, 5, 5));
+        	gridPanel.setLayout(new GridLayout(6, 6, 5, 5));
+        	String[][] buttons = new String[6][6];
+        	int count = 1;
+        	for (int i = 0; i < 6; i++) {
+        		for (int j = 0; j < 6; j++) {
+        			if(i % 2 == 0) {
+        				buttons[i][j] == count;
+        			} else {
+        				buttons[i][5-j] == count;
+        			}
+        			count++;
+        		}
+        	}
+        	for (int i = 0; i < 6; i++) {
+        		for (int j = 0; j < 6; j++) {
+        			gridPanel.add(new JButton(buttons[i][j]));
+        		}
+        	}
+        	add(gridPanel);
 		//grid of buttons
 		//button to roll dice
 		//display score and name
 		//title
-		add(MainPanel);
+		add(mainPanel);
+		
 	}
 
 	private void move() {
