@@ -10,7 +10,7 @@ public class Main {
 
 		Scanner console = new Scanner(System.in);
 		System.out.print("Player Name: ");
-		Player player = new Player(console.next());
+		Player player = new Player(console.nextLine());
 		parseEvents();
 		Board board = new Board(player, events);
 	}
