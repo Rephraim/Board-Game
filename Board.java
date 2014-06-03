@@ -35,12 +35,13 @@ public class Board extends JFrame() {
 	}
 
 	private void move() {
-		
+		//create boardtile with given number
 	}
 	
 	private void lastSquare() {
 		//pop up new lastSquare jframe
-		//
+		//which displays everything
+		//end game?
 	}
 	
 	private class rollListener implements ActionListener {
@@ -52,4 +53,3 @@ public class Board extends JFrame() {
 			}
 		}
 	}
-}
