@@ -68,12 +68,13 @@ public class Board extends JFrame() {
         	}
         	mainPanel.add(top);
         	mainPanel.add(gridPanel);
-		mainPanel.add(new JLabel("Player - " + getName()));
+		mainPanel.add(new JLabel("Player - " + player.getName()));
 		//grid of buttons
 		//button to roll dice
 		//display score and name
 		//title
 		setTitle("Senioritis: the Game");
+		setLocationRelativeTo(null);
 	}
 
 	private void move() {
