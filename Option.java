@@ -9,7 +9,7 @@ public class Option {
   private int changeA; //change in academics
   
   public Option (String desc, String changes, int cT, int cM, int cH, int cA) {
-    descrip = details;
+    descrip = desc;
     statchanges = changes;
     changeT = cT;
     changeM = cM;
