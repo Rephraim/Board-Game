@@ -15,10 +15,6 @@ public class Main {
 		Board board = new Board(player, events);
 	}
 
-	public int rollDice(){
-		return (int)Math.random()*4 + 1;
-	}
-
 	//parse in all events as objects into arrayist events
 	public void parseEvents(){
 			File file = new File("InputFile.txt");

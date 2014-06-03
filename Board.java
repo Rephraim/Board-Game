@@ -15,11 +15,13 @@ public class Board extends JFrame() {
 	private int currentSquare;
 	private Player player=null;
 	private ArrayList<Event> events = null;
+	private BoardTile currentTile=null;
 
 
   	public Board(Player a, Events b) {
   		player = a;
   		events = b;
+  		currentSquare = 0;
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		buildWindow();
 		setVisible(true);
@@ -64,6 +66,8 @@ public class Board extends JFrame() {
 
 	private void move() {
 		//create boardtile with given number
+		currentSquare += rollDice();
+		currentTile = new BoardTile(currentSquare, events, player);
 
 	}
 	
