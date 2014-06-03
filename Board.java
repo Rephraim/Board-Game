@@ -18,19 +18,9 @@ public class Board extends JFrame() {
 	private ArrayList<Event> events = null;
 	private BoardTile currentTile=null;
 
-
-  	public Board(Player a, Events b) {
-  		player = a;
-  		events = b;
-  		currentSquare = 0;
-=======
-	private Player player;
-	private ArrayList<Event> events;
-
   	public Board(Player p, ArrayList<Event> e) {
   		player = p;
   		events = e;
->>>>>>> a44c69fc383a7f42c6da6f68c9bb124f4f591a3c
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		buildWindow();
 		setVisible(true);
