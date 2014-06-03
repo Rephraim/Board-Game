@@ -28,7 +28,6 @@ public class Board extends JFrame {
 		buildInstructions();
 		buildWindow();
 		setVisible(true);
-		//MISC OTHER CONSTRUCTION!!!!!!!!!!!!!!!!!!!!!!!
 	}
 
 	private void buildInstructions() {
@@ -88,7 +87,7 @@ public class Board extends JFrame {
         	}
         	mainPanel.add(top);
         	mainPanel.add(gridPanel);
-		mainPanel.add(new JLabel("Player" + player.getName()));
+		mainPanel.add(new JLabel("Player " + player.getName()));
 		mainPanel.add(new JLabel("You are at square #" + (currentSquare + 1)));
 		//grid of buttons
 		//button to roll dice
