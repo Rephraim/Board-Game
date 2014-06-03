@@ -5,12 +5,12 @@ public class Player {
   private int academics;
   private String name;
   
-  public Player (String name) {
+  public Player (String input) {
     tardies = 0;
     money = 50;
     happiness = 50;       //takes name input, initializes variables to corrects values
     academics = 50;
-    name = name;
+    name = input;
   }
 
   public int getTardies() {       //returns # of tardies
