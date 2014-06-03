@@ -87,12 +87,8 @@ public class Board extends JFrame() {
 
 	private void move() {
 		//create boardtile with given number
-<<<<<<< HEAD
 		currentSquare += rollDice();
 		currentTile = new BoardTile(currentSquare, events, player);
-
-=======
->>>>>>> a44c69fc383a7f42c6da6f68c9bb124f4f591a3c
 	}
 	
 	private void lastSquare() {
