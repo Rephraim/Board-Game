@@ -21,19 +21,17 @@ public class Main {
 	public static void parseEvents() throws FileNotFoundException{
 		File file = new File("InputFile.txt");
 		Scanner input = new Scanner(file);
-		Event e=null;
-		Option one=null;
-		Option two=null;
-		Option three=null;
-		int x=0; //filler
-		String y=null; //filler
-		String title=null;
+		Event e;
+		Option one;
+		Option two;
+		Option three;
+		String y; //filler
+		String title;
 		boolean req=true;
 
 		events.add(null);
 		for (int i=1; i<36; i++){
 			while (input.hasNextLine())
-			x = input.nextInt(); //for ref on txt file, not needed
 			title = input.nextLine();
 			y = input.nextLine(); //for ref on txt file, not needed
 			
