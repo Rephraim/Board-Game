@@ -32,6 +32,7 @@ public class Main {
 
 		events.add(null);
 		for (int i=1; i<36; i++){
+			while (input.hasNextLine())
 			x = input.nextInt(); //for ref on txt file, not needed
 			title = input.nextLine();
 			y = input.nextLine(); //for ref on txt file, not needed
