@@ -39,9 +39,9 @@ public class BoardTile extends JFrame {
 		option1 = new JButton("A");
 		option1.addActionListener(new abuttonListener());
 		option2 = new JButton("B");
-		option1.addActionListener(new bbuttonListener());
+		option2.addActionListener(new bbuttonListener());
 		option3 = new JButton("C");
-		option1.addActionListener(new cbuttonListener());
+		option3.addActionListener(new cbuttonListener());
 		mainPanel.add(description);
 		mainPanel.add(a);
 		mainPanel.add(b);
