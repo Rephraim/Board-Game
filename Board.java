@@ -144,7 +144,7 @@ public class Board extends JFrame {
 	private class startGameListener implements ActionListener {
 		
 		public void actionPerformed(ActionEvent e) {
-			Player player = new Player(playerName.getText())
+			Player player = new Player(playerName.getText());
 		}
 	}
 }
