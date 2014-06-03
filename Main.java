@@ -24,11 +24,23 @@ public class Main {
 			File file = new File("InputFile.txt");
 			Scanner input = new Scanner(file);
 			Event e=null;
+			Option one=null;
+			Option two=null;
+			Option three=null;
+			int x=null; //filler
+			String y=null; //filler
+			String title=null;
+			boolean req=true;
 
 			events.add(null);
 			for (int i=1; i<36; i++){
-					e = new Event()
-					events.add( new Event() )
+					x = input.nextInt(); //for ref on txt file, not needed
+					title = input.nextLine();
+					y = input.nextLine(); //for ref on txt file, not needed
+					one = new Option(input.nextLine(), input.nextLine(), input.nextInt(), input.nextInt(), input.nextInt(), input.nextInt() );
+					two = new Option(input.nextLine(), input.nextLine(), input.nextInt(), input.nextInt(), input.nextInt(), input.nextInt() );
+					three = new Option(input.nextLine(), input.nextLine(), input.nextInt(), input.nextInt(), input.nextInt(), input.nextInt() );
+					events.add( new Event(title, one, two, three, req) );
 			}
 
 
