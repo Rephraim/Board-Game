@@ -55,7 +55,7 @@ public class Board extends JFrame() {
         			gridPanel.add(new JButton(buttons[i][j]));
         		}
         	}
-        	mainPanel.add(gridPanel)
+        	mainPanel.add(gridPanel);
 		//grid of buttons
 		//button to roll dice
 		//display score and name
