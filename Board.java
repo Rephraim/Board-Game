@@ -20,6 +20,7 @@ public class Board extends JFrame() {
   	public Board(Player p, ArrayList<Event> e) {
   		player = p;
   		events = e;
+  		currentSquare = 0;
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		buildWindow();
 		setVisible(true);
@@ -69,6 +70,7 @@ public class Board extends JFrame() {
         	mainPanel.add(top);
         	mainPanel.add(gridPanel);
 		mainPanel.add(new JLabel("Player - " + player.getName()));
+		mainPanel.add(new JLabel("You are at square # - " + (currentSquare + 1)));
 		//grid of buttons
 		//button to roll dice
 		//display score and name
