@@ -12,7 +12,7 @@ import javax.swing.border.*;
 		//display of score and person's name
 		//if actionlistener detects that current tile + rolled dice > last tile, moves to last tile
 		//at last tile, open new graduation last square jframe and displays if graduate or not
-		
+
 public class Board extends JFrame {
   
 	private int currentSquare;
@@ -28,29 +28,32 @@ public class Board extends JFrame {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		buildInstructions();
 		buildWindow();
+		setVisible(true);
 		//MISC OTHER CONSTRUCTION!!!!!!!!!!!!!!!!!!!!!!!
 	}
+	//J.Wu identified error in taking out setVisible
 
 	private void buildInstructions() {
-		JPanel main = new JPanel();
+		mainPanel = new JPanel();
 		JLabel label1 = new JLabel("Welcome to your senior year at MSJHS.");
 		JLabel label2 = new JLabel("Get through the year, while gathering");
 		JLabel label3 = new JLabel("as many $$$, happiness, and academic");
 		JLabel label4 = new JLabel("points as you can, without getting too");
 		JLabel label5 = new JLabel("many tardies. Are you ready?");
-		
-		main.setLayout(new BoxLayout(main, BoxLayout.Y_AXIS));
-		main.setBorder(BorderFactory.createLineBorder(Color.black));
-		main.add(label1);
-		main.add(label2);
-		main.add(label3);
-		main.add(label4);
-		main.add(label5);
+
+		mainPanel.setLayout(new BoxLayout(mainPanel, BoxLayout.Y_AXIS));
+		mainPanel.setBorder(BorderFactory.createLineBorder(Color.black));
+		mainPanel.add(label1);
+		mainPanel.add(label2);
+		mainPanel.add(label3);
+		mainPanel.add(label4);
+		mainPanel.add(label5);
 		setLocationRelativeTo(null);
 		setSize(300,200);
-		add(main);
+		add(mainPanel);
 	}
-	
+	//Jerry Wu helped debugging: changing main to mainPanel
+
 	private void buildWindow() {
 		mainPanel = new JPanel();
 		mainPanel.setLayout(new BoxLayout(mainPanel, BoxLayout.Y_AXIS));
@@ -105,16 +108,16 @@ public class Board extends JFrame {
 		setSize(700, 500);
 		setLocationRelativeTo(null);
 	}
-	
+
 	private void lastSquare() {
 		currentSquare = -1;
  		LastSquare tile = new LastSquare (player);
 	}
 
 	private class rollListener implements ActionListener {
-		
+
 		private int currentRoll;
-		
+
 		public void move() {
 			//create boardtile with given number
 			currentSquare += currentRoll;
@@ -124,12 +127,12 @@ public class Board extends JFrame {
 			mainPanel.revalidate();
 			mainPanel.repaint();
 		}
-		
+
 		public int rollDice(){
 			currentRoll =((int) (Math.random()*4)) + 1;
 			return currentRoll;
 		}
-		
+
 		public void actionPerformed(ActionEvent e) {
 			if (currentSquare == -1) {
 				lastSquare();
