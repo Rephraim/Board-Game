@@ -74,7 +74,7 @@ Y
 Yes. 
 happiness -10
 0 0 -10 0
-….yes. 
+...yes. 
 happiness -15
 0 0 -15 0
 Ohlone for lifeeee.
@@ -250,7 +250,7 @@ happiness +2
 
 
 19
-What a nice day it is today….
+What a nice day it is today...
 Y
 Lets go hang out at Snowflake! 
 tardies +3, happiness +10
@@ -390,7 +390,7 @@ tardies +3, $$$ -3, happiness -3, academics -3
 
 
 29
-Ugh! You just can’t get 2048, so you…
+Ugh! You just can’t get 2048, so you...
 N
 make an AI for it. 
 #werryju happiness + 5
