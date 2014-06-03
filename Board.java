@@ -3,6 +3,9 @@
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
+import java.util.*;
+import javax.swing.border.*;
+
 		//grid of buttons
 		//button to start game
 		//add action listener that generates new move (move icon and and opens new board tile), if check first for rolleddice
@@ -10,7 +13,7 @@ import java.awt.event.*;
 		//if actionlistener detects that current tile + rolled dice > last tile, moves to last tile
 		//at last tile, open new graduation last square jframe and displays if graduate or not
 		
-public class Board extends JFrame() {
+public class Board extends JFrame {
   
 	private int currentSquare;
 	private Player player;
@@ -28,7 +31,7 @@ public class Board extends JFrame() {
 	}
 	
 	public int rollDice(){
-		return (int)Math.random()*4 + 1;
+		return ((int) (Math.random()*4)) + 1;
 	}
 
 	private void buildWindow() {
@@ -55,9 +58,9 @@ public class Board extends JFrame() {
         	for (int i = 0; i < 6; i++) {
         		for (int j = 0; j < 6; j++) {
         			if(i % 2 == 0) {
-        				buttons[i][j] == count;
+        				buttons[i][j] = Integer.toString(count);
         			} else {
-        				buttons[i][5-j] == count;
+        				buttons[i][5-j] = Integer.toString(count);
         			}
         			count++;
         		}
@@ -79,7 +82,7 @@ public class Board extends JFrame() {
 		setLocationRelativeTo(null);
 	}
 
-	private void move() {
+	public void move() {
 		//create boardtile with given number
 		currentSquare += rollDice();
 		invalidate();
@@ -89,7 +92,7 @@ public class Board extends JFrame() {
 	
 	private void lastSquare() {
 		currentSquare = -1;
-		LastSquare tile = new LastSquare (player);
+ 		LastSquare tile = new LastSquare (player);
 	}
 	
 	private class rollListener extends JButton implements ActionListener {
@@ -98,10 +101,12 @@ public class Board extends JFrame() {
 			addActionListener(this);
 		}
 		public void actionPerformed(ActionEvent e) {
-			if (rollDice() + currentSquare < 36) {
+			if (currentSquare == -1) {
+ 			} else if (rollDice() + currentSquare < 36) {
 				move();
 			} else {
 				lastSquare();
 			}
 		}
 	}
+}
