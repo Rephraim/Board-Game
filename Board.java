@@ -13,10 +13,9 @@ import java.awt.event.*;
 public class Board extends JFrame() {
   
 	private int currentSquare;
-<<<<<<< HEAD
-	private Player player=null;
-	private ArrayList<Event> events = null;
-	private BoardTile currentTile=null;
+	private Player player;
+	private ArrayList<Event> events;
+	private BoardTile currentTile;
 
   	public Board(Player p, ArrayList<Event> e) {
   		player = p;
