@@ -31,10 +31,20 @@ public class Board extends JFrame() {
 
 	private void buildWindow() {
 		JPanel mainPanel = new JPanel();
-		mainPanel.setLayout(new BoxLayout(basic, BoxLayout.Y_AXIS));
+		mainPanel.setLayout(new BoxLayout(mainPanel, BoxLayout.Y_AXIS));
+		mainPanel.setBorder(new EmptyBorder(new Insets(40, 40, 40, 40)));
 		add(mainPanel);
 		JPanel top = new JPanel();
-		
+		top.setLayout(new BoxLayout(top, BoxLayout.X_AXIS));
+		top.add(new JLabel(":) - " + player.getHappiness()));
+		top.add(Box.createRigidArea(5, 0));
+		top.add(new JLabel("academics - " + player.getAcademics()));
+		top.add(Box.createRigidArea(5, 0));
+		top.add(new JLabel("$$$ - " + player.getMoney()));
+		top.add(Box.createRigidArea(5, 0));
+		top.add(new JLabel("tardies - " + player.getTardies()));
+		top.add(Box.createRigidArea(10, 0));
+		top.add(new JButton("Roll Dice"));
 		JPanel gridPanel = new JPanel();
 		gridPanel.setBorder(BorderFactory.createEmptyBorder(5, 5, 5, 5));
         	gridPanel.setLayout(new GridLayout(6, 6, 5, 5));
