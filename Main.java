@@ -29,19 +29,15 @@ public class Main {
 		boolean req=true;
 
 		events.add(null);
-		while (input.hasNextLine()) {
 			for (int i=1; i<36; i++){
+				x = input.nextInt();
 				title = input.nextLine();
 				y = input.nextLine(); //for ref on txt file, not needed
-				
-				if (y.equals("N"))
-					req=false;
 			
 				one = new Option(input.nextLine(), input.nextLine(), input.nextInt(), input.nextInt(), input.nextInt(), input.nextInt() );
 				two = new Option(input.nextLine(), input.nextLine(), input.nextInt(), input.nextInt(), input.nextInt(), input.nextInt() );
 				three = new Option(input.nextLine(), input.nextLine(), input.nextInt(), input.nextInt(), input.nextInt(), input.nextInt() );
 				events.add( new Event(title, one, two, three, req) );
 			}
-		}
 	}
 }
