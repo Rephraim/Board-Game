@@ -1,13 +1,14 @@
 import java.util.*;
+import java.io.*;
 
 public class Main {
 
 	static Scanner console=  new Scanner(System.in);
 
 	//arraylist of all events
-	static ArrayList<Event> events = new ArrayList<Event>;
+	static ArrayList<Event> events = new ArrayList<Event>();
 
-	public static void main String(args[]){
+	public static void main (String args[])throws FileNotFoundException {
 
 		System.out.print("Player Name: ");
 		Player player = new Player( console.next() );
@@ -16,14 +17,15 @@ public class Main {
 	}
 
 	//parse in all events as objects into arrayist events
-	public void parseEvents(){
+	
+	public static void parseEvents() throws FileNotFoundException{
 			File file = new File("InputFile.txt");
 			Scanner input = new Scanner(file);
 			Event e=null;
 			Option one=null;
 			Option two=null;
 			Option three=null;
-			int x=null; //filler
+			int x=0; //filler
 			String y=null; //filler
 			String title=null;
 			boolean req=true;
