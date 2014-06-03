@@ -4,7 +4,7 @@ import java.io.*;
 public class Main {
 
 	//arraylist of all events
-	static ArrayList<Event> events = new ArrayList<Event>();
+	ArrayList<Event> events = new ArrayList<Event>();
 
 	public static void main (String args[])throws FileNotFoundException {
 		
@@ -17,7 +17,7 @@ public class Main {
 
 	//parse in all events as objects into arrayist events
 	
-	public static void parseEvents() throws FileNotFoundException{
+	public void parseEvents() throws FileNotFoundException{
 		File file = new File("InputFile.txt");
 		Scanner input = new Scanner(file);
 		Event e;
