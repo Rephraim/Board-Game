@@ -3,6 +3,8 @@ import java.util.*;
 public class Main {
 
 	static Scanner console=  new Scanner(System.in);
+
+	//arraylist of all events
 	static ArrayList<Event> events = new ArrayList<Event>;
 
 	public static void main String(args[]){
@@ -16,6 +18,7 @@ public class Main {
 		return (int)Math.random()*6 + 1;
 	}
 
+	//parse in all events as objects into arrayist events
 	public void parseEvents(){
 			File file = new File("InputFile.txt");
 			Scanner input = new Scanner(file);
