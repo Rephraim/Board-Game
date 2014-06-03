@@ -13,6 +13,7 @@ import java.awt.event.*;
 public class Board extends JFrame() {
   
 	private int currentSquare;
+<<<<<<< HEAD
 	private Player player=null;
 	private ArrayList<Event> events = null;
 	private BoardTile currentTile=null;
@@ -22,6 +23,14 @@ public class Board extends JFrame() {
   		player = a;
   		events = b;
   		currentSquare = 0;
+=======
+	private Player player;
+	private ArrayList<Event> events;
+
+  	public Board(Player p, ArrayList<Event> e) {
+  		player = p;
+  		events = e;
+>>>>>>> a44c69fc383a7f42c6da6f68c9bb124f4f591a3c
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		buildWindow();
 		setVisible(true);
@@ -34,7 +43,20 @@ public class Board extends JFrame() {
 
 	private void buildWindow() {
 		JPanel mainPanel = new JPanel();
-		mainPanel.setLayout(new BoxLayout(basic, BoxLayout.Y_AXIS));
+		mainPanel.setLayout(new BoxLayout(mainPanel, BoxLayout.Y_AXIS));
+		mainPanel.setBorder(new EmptyBorder(new Insets(40, 40, 40, 40)));
+		add(mainPanel);
+		JPanel top = new JPanel();
+		top.setLayout(new BoxLayout(top, BoxLayout.X_AXIS));
+		top.add(new JLabel(":) - " + player.getHappiness()));
+		top.add(Box.createRigidArea(5, 0));
+		top.add(new JLabel("academics - " + player.getAcademics()));
+		top.add(Box.createRigidArea(5, 0));
+		top.add(new JLabel("$$$ - " + player.getMoney()));
+		top.add(Box.createRigidArea(5, 0));
+		top.add(new JLabel("tardies - " + player.getTardies()));
+		top.add(Box.createRigidArea(10, 0));
+		top.add(new rollListener("Roll Dice"));
 		JPanel gridPanel = new JPanel();
 		gridPanel.setBorder(BorderFactory.createEmptyBorder(5, 5, 5, 5));
         	gridPanel.setLayout(new GridLayout(6, 6, 5, 5));
@@ -55,20 +77,22 @@ public class Board extends JFrame() {
         			gridPanel.add(new JButton(buttons[i][j]));
         		}
         	}
-        	mainPanel.add(gridPanel)
+        	mainPanel.add(gridPanel);
 		//grid of buttons
 		//button to roll dice
 		//display score and name
 		//title
-		add(mainPanel);
 		
 	}
 
 	private void move() {
 		//create boardtile with given number
+<<<<<<< HEAD
 		currentSquare += rollDice();
 		currentTile = new BoardTile(currentSquare, events, player);
 
+=======
+>>>>>>> a44c69fc383a7f42c6da6f68c9bb124f4f591a3c
 	}
 	
 	private void lastSquare() {
@@ -77,7 +101,11 @@ public class Board extends JFrame() {
 		//end game?
 	}
 	
-	private class rollListener implements ActionListener {
+	private class rollListener extends JButton implements ActionListener {
+		public rollListener(String text) {
+			super.setText(text);
+			addActionListener(this);
+		}
 		public void actionPerformed(ActionEvent e) {
 			if (rollDice() + currentSquare < 36) {
 				move();
