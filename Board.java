@@ -26,31 +26,34 @@ public class Board extends JFrame {
   		events = e;
   		currentSquare = 0;
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		buildInstructions();
 		buildWindow();
 		setVisible(true);
+		buildInstructions();
 		//MISC OTHER CONSTRUCTION!!!!!!!!!!!!!!!!!!!!!!!
 	}
 	//J.Wu identified error in taking out setVisible
 
 	private void buildInstructions() {
-		mainPanel = new JPanel();
+		JFrame frame = new JFrame();
+		JPanel main = new JPanel();
 		JLabel label1 = new JLabel("Welcome to your senior year at MSJHS.");
 		JLabel label2 = new JLabel("Get through the year, while gathering");
 		JLabel label3 = new JLabel("as many $$$, happiness, and academic");
 		JLabel label4 = new JLabel("points as you can, without getting too");
 		JLabel label5 = new JLabel("many tardies. Are you ready?");
 
-		mainPanel.setLayout(new BoxLayout(mainPanel, BoxLayout.Y_AXIS));
-		mainPanel.setBorder(BorderFactory.createLineBorder(Color.black));
-		mainPanel.add(label1);
-		mainPanel.add(label2);
-		mainPanel.add(label3);
-		mainPanel.add(label4);
-		mainPanel.add(label5);
-		setLocationRelativeTo(null);
-		setSize(300,200);
-		add(mainPanel);
+		main.setLayout(new BoxLayout(main, BoxLayout.Y_AXIS));
+		main.setBorder(BorderFactory.createLineBorder(Color.black));
+		main.add(label1);
+		main.add(label2);
+		main.add(label3);
+		main.add(label4);
+		main.add(label5);
+		frame.setSize(300,200);
+		frame.add(main);
+		frame.setVisible(true);
+		frame.setTitle("Instructions");
+		frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 	}
 	//Jerry Wu helped debugging: changing main to mainPanel
 
