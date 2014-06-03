@@ -10,8 +10,6 @@ academics +2
 Six. AP gov/econ!!! 
 happiness -5, academics +4
 0/0/-5/4
-
-
 2
 8 AM, waking up in the morning. Gotta be fresh, gotta go downstairs. 
 N
@@ -24,8 +22,6 @@ happiness +3
 Meeeeeeeeh, school.
 tardies +1, happiness -2
 1/0/-2/0
-
-
 3
 You’ve been craving _______________, so you go out to lunch.  As a result you are late to fifth period.  
 N
@@ -38,8 +34,6 @@ tardies +1, $$$ -5, happiness +5
 Eastern Winds
 tardies +1, $$$ -4, happiness +5
 1/-4/5/0
-
-
 4
 All your friends are going to Waterworld.  Are you?
 Y
@@ -52,8 +46,6 @@ happiness -2
 I think I’ll go to Berkeley instead. 
 tardies +1, $$$ -5, happiness +5
 1/-5/5/0
-
-
 5
 Oh no...You forgot to do that one assignment worth 20% of your grade. You…
 Y
@@ -66,8 +58,6 @@ academics -5
 screw it and play League instead. 
 happiness +5, academics -10
 0/0/5/-10
-
-
 6 
 College applications... do I have to? :(
 Y
@@ -80,8 +70,6 @@ happiness -15
 Ohlone for lifeeee.
 happiness +5, academics -5
 0/0/5/-5
-
-
 7
 Hey... there’s a five on the ground!  
 N1
@@ -94,8 +82,6 @@ $$$ +2, happiness +3
 Leave it.
 happiness -2
 0/0/-2/0
-
-
 8
 You’ve been down with the flu for a week.  
 N
@@ -108,8 +94,6 @@ tardies +5, academics +3
 Party in LA.
 tardies +5, academics -3
 5/0/0/-3
-
-
 9
 Brace yourself. Winter ball is coming!  Got a date?
 Y
@@ -122,8 +106,6 @@ $$$ -5, happiness +5
 No, gotta stay home and study for one thing or another.  
 happiness -3, academics +3
 0/0/-3/3
-
-
 10
 Economics field trip! Do you go?
 N
@@ -136,8 +118,6 @@ happiness -2, academics +3
 Heck no, Compsci field trip that day! 
 #brucker4lyfe $$$ -3, happiness +7
 0/-3/7/0
-
-
 11
 Time for Mock Con! Who do you vote for?
 Y
@@ -150,8 +130,6 @@ happiness +2
 Vote Radical! 
 happiness +5
 0/0/5/0
-
-
 12
 During winter break you go skiing and...
 N
@@ -164,8 +142,6 @@ happiness +10, academics -3
 Crash into a tree. Ow.
 happiness -10
 0/0/-10/0
-
-
 13
 Winter break is for..?
 Y
@@ -178,8 +154,6 @@ Finish a ton of DeviantArt commissions.
 Flappy Bird!
 happiness -2, academics -3
 0/0/-2/-3
-
-
 14
 You did it, made it to second semester.
 N
@@ -192,7 +166,6 @@ happiness -3
 New found hate for projects.
 happiness -3, academics -3
 0/0/-3/-3
-
 15
 You woke up too early, lowering your blood sugar levels.  
 N
@@ -205,8 +178,6 @@ tardies +1, happiness +3
 Screw the diet. Sugar, sugar, aaaand more sugar.
 happiness -3
 0/0/-3/0
-
-
 16
 Need a little bit more spending money. Do you…
 Y
@@ -219,8 +190,6 @@ $$$ + 10, academics -3
 do nothing? 
 happiness -2
 0/0/-2/0
-
-
 17
 You have to cram for a huge physics midterm. 
 N
@@ -233,8 +202,6 @@ happiness -5, academics -5
 #SSS
 happiness +10, academics -15
 0/0/10/-15
-
-
 18
 Ashland’s coming up. Are you going?
 Y
@@ -247,8 +214,6 @@ $$$ -4; happiness +5
 ERWC! #best class
 happiness +2
 0/0/2/0
-
-
 19
 What a nice day it is today...
 Y
@@ -261,8 +226,6 @@ tardies +1, happiness +5
 But there’s school today! 
 happiness -2
 0/0/-2/0
-
-
 20
 You go to watch Frozen.
 N
@@ -275,8 +238,6 @@ happiness -5
 Let it go, let it gooooooo~
 happiness +1
 0/0/1/0
-
-
 21
 “Let it Go” gets stuck in your head. AGAIN.
 N
@@ -289,8 +250,6 @@ happiness -2, academics -2
 Can't hold it back anymore~
 happiness +5, academics -2
 0/0/5/-2
-
-
 22
 Senior Ball is at CA Academy of Sciences!  Are you excited?
 Y
@@ -303,8 +262,6 @@ $$$ -10, happiness +7
 Ew. #foreveralone
 happiness -2
 0/0/-2/0
-
-
 23
 AP Computer Science project due tomorrow. How much do you more work do you have to do?
 Y
@@ -317,8 +274,6 @@ happiness +3, academics +5
 What project? My job is to tell you to “close your laptops”. 
 #werryju
 0/0/0/0
-
-
 24
 The legendary Senior Ditch Day has arrived.
 Y
@@ -331,8 +286,6 @@ My parents made me go to school.
 Go shopping for more ties. 
 #aiden $$$ -3, happiness +5
 0/-3/5/0
-
-
 25
 You got caught up in a Facebook poke war. 
 N
@@ -345,8 +298,6 @@ happiness -2
 Ignore all the pokes!
 happiness +3, academics +3
 0/0/3/3
-
-
 26
 You made it to spring break. Got any plans?
 Y
@@ -359,8 +310,6 @@ Study for APs.
 Sleep all day, everyday. 
 happiness +5
 0/0/5/0
-
-
 27
 Oh no! You haven’t turned in any service learning forms and they’re due in 5 minutes. 
 N
@@ -373,8 +322,6 @@ tardies +1, academics -2
 #SSS
 tardies +2
 2/0/0/0
-
-
 28
 Much internet.
 N
@@ -387,8 +334,6 @@ academics -2
 I hate this meme.
 tardies +3, $$$ -3, happiness -3, academics -3
 3/-3/-3/-3
-
-
 29
 Ugh! You just can’t get 2048, so you...
 N
@@ -401,8 +346,6 @@ make a page for it.
 rage quit.  
 happiness -2
 0/0/-2/0
-
-
 30
 You have to decide between going to Yale or Stanford. What do you do?
 Y
@@ -415,8 +358,6 @@ happiness +3
 Yale, because New Haven has delicious pizza. 
 happiness +3
 0/0/3/0
-
-
 31
 Darn, your neighbor was blasting Justin Bieber and One Direction at 3 AM!  
 N
@@ -429,8 +370,6 @@ happiness -2, academics -2
 Omg. I love this song.
 #jbforlife happiness +5
 0/0/5/0
-
-
 32
 Entire weekend spent on _______. 
 N
@@ -443,8 +382,6 @@ happiness +3, academics -4
 XKCD.
 happiness +4, academics -2
 0/0/4/-2
-
-
 33
 To project or not to project?
 N
@@ -457,8 +394,6 @@ happiness +2, academics +2
 I'll just wing it.
 happiness +3, academics -5
 0/0/3/-5
-
-
 34
 Awww shitake mushrooms, it’s finals week.
 Y
@@ -471,8 +406,6 @@ happiness -2, academics +3
 Whatever. 
 happiness +3, academics -5
 0/0/3/-5
-
-
 35 
 Grad night at Disneyland! Do you go?
 Y
