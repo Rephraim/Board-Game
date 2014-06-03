@@ -62,13 +62,13 @@ public class Board extends JFrame {
 		JPanel top = new JPanel();
 		top.setLayout(new BoxLayout(top, BoxLayout.X_AXIS));
 		top.add(new JLabel(":) - " + player.getHappiness()));
-		top.add(Box.createRigidArea(5, 0));
+		top.add(Box.createRigidArea(new Dimension(5, 0)));
 		top.add(new JLabel("academics - " + player.getAcademics()));
-		top.add(Box.createRigidArea(5, 0));
+		top.add(Box.createRigidArea(new Dimension(5, 0)));
 		top.add(new JLabel("$$$ - " + player.getMoney()));
-		top.add(Box.createRigidArea(5, 0));
+		top.add(Box.createRigidArea(new Dimension(5, 0)));
 		top.add(new JLabel("tardies - " + player.getTardies()));
-		top.add(Box.createRigidArea(10, 0));
+		top.add(Box.createRigidArea(new Dimension(10, 0)));
 		top.add(new rollListener("Roll Dice"));
 		JPanel gridPanel = new JPanel();
 		gridPanel.setBorder(BorderFactory.createEmptyBorder(5, 5, 5, 5));
