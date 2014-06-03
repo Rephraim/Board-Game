@@ -28,6 +28,7 @@ public class Board extends JFrame {
 		buildInstructions();
 		buildWindow();
 		setVisible(true);
+		//MISC OTHER CONSTRUCTION!!!!!!!!!!!!!!!!!!!!!!!
 	}
 
 	private void buildInstructions() {
@@ -64,7 +65,9 @@ public class Board extends JFrame {
 		top.add(Box.createRigidArea(new Dimension(5, 0)));
 		top.add(new JLabel("tardies - " + player.getTardies()));
 		top.add(Box.createRigidArea(new Dimension(10, 0)));
-		top.add(new rollListener("Roll Dice"));
+		JButton rollDice = new JButton("Roll Dice");
+		rollDice.addActionListener(new rollListener());
+		top.add(rollDice);
 		JPanel gridPanel = new JPanel();
 		gridPanel.setBorder(BorderFactory.createEmptyBorder(5, 5, 5, 5));
         	gridPanel.setLayout(new GridLayout(6, 6, 5, 5));
@@ -96,27 +99,13 @@ public class Board extends JFrame {
 		setTitle("Senioritis: the Game");
 		setLocationRelativeTo(null);
 	}
-
-	
 	
 	private void lastSquare() {
 		currentSquare = -1;
  		LastSquare tile = new LastSquare (player);
 	}
-	
-	private class rollListener extends JButton implements ActionListener {
-		public rollListener(String text) {
-			super.setText(text);
-			addActionListener(this);
-		}
-		public void actionPerformed(ActionEvent e) {
-			if (currentSquare == -1) {
- 			} else if (rollDice() + currentSquare < 36) {
-				move();
-			} else {
-				lastSquare();
-			}
-		}
+
+	private class rollListener implements ActionListener {
 		public void move() {
 			//create boardtile with given number
 			currentSquare += rollDice();
@@ -124,8 +113,18 @@ public class Board extends JFrame {
 			validate();
 			currentTile = new BoardTile(currentSquare, events, player);
 		}
+		
 		public int rollDice(){
 			return ((int) (Math.random()*4)) + 1;
+		}
+		
+		public void actionPerformed(ActionEvent e) {
+			if (currentSquare == -1) {
+ 			} else if (rollDice() + currentSquare < 36) {
+				move();
+			} else {
+				lastSquare();
+			}
 		}
 	}
 }
