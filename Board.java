@@ -95,7 +95,7 @@ public class Board extends JFrame {
 		if (currentSquare != -1){
 			mainPanel.add(new JLabel("You are at square #" + (currentSquare)));
 		} else {
-			mainPanel.add(new JLabel("You are at square #36");
+			mainPanel.add(new JLabel("You are at square #36"));
 		}
 		//grid of buttons
 		//button to roll dice
