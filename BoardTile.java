@@ -33,9 +33,9 @@ public class BoardTile extends JFrame {
 	private void buildWindow() {
 		JPanel mainPanel = new JPanel();
 		JLabel description = new JLabel(event.getDescrip());
-		JLabel a = new JLabel(opt1.getDescrip);
-		JLabel b = new JLabel(opt2.getDescrip);
-		JLabel c = new JLabel(opt3.getDescrip);
+		JLabel a = new JLabel(opt1.getDescrip());
+		JLabel b = new JLabel(opt2.getDescrip());
+		JLabel c = new JLabel(opt3.getDescrip());
 		option1 = new JButton("A");
 		option1.addActionListener(new abuttonListener());
 		option2 = new JButton("B");
@@ -59,7 +59,7 @@ public class BoardTile extends JFrame {
 			player.changeMoney(opt1.getChangeM());
 			player.changeHappiness(opt1.getChangeH());
 			player.changeAcademics(opt1.getChangeA());
-			JOptionPane.showMessageDialog(null, opt1.getStatChanges, "Option A", JOptionPane.PLAIN_MESSAGE);
+			JOptionPane.showMessageDialog(null, opt1.getStatChanges(), "Option A", JOptionPane.PLAIN_MESSAGE);
 		}
 	}
 	private class bbuttonListener implements ActionListener {
@@ -68,7 +68,7 @@ public class BoardTile extends JFrame {
 			player.changeMoney(opt2.getChangeM());
 			player.changeHappiness(opt2.getChangeH());
 			player.changeAcademics(opt2.getChangeA());
-			JOptionPane.showMessageDialog(null, opt2.getStatChanges, "Option B", JOptionPane.PLAIN_MESSAGE);
+			JOptionPane.showMessageDialog(null, opt2.getStatChanges(), "Option B", JOptionPane.PLAIN_MESSAGE);
 		}
 	}
 	private class cbuttonListener implements ActionListener {
@@ -77,7 +77,7 @@ public class BoardTile extends JFrame {
 			player.changeMoney(opt3.getChangeM());
 			player.changeHappiness(opt3.getChangeH());
 			player.changeAcademics(opt3.getChangeA());
-			JOptionPane.showMessageDialog(null, opt3.getStatChanges, "Option C", JOptionPane.PLAIN_MESSAGE);
+			JOptionPane.showMessageDialog(null, opt3.getStatChanges(), "Option C", JOptionPane.PLAIN_MESSAGE);
 		}
 	}
 }
