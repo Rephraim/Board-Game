@@ -15,7 +15,7 @@ public class BoardTile extends JFrame {
 	private Player player;
 
   	public BoardTile(int tileNumber, ArrayList<Event> list, Player p) {
-		event = list.get(tileNumber - 1);
+		event = list.get(tileNumber);
 		player = p;
 		d1 = event.getChoiceA();
 		d2 = event.getChoiceB();
