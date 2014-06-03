@@ -30,10 +30,6 @@ public class Board extends JFrame {
 		setVisible(true);
 		//MISC OTHER CONSTRUCTION!!!!!!!!!!!!!!!!!!!!!!!
 	}
-	
-	public int rollDice(){
-		return ((int) (Math.random()*4)) + 1;
-	}
 
 	private void buildInstructions() {
 		JPanel mainPanel = new JPanel();
@@ -102,13 +98,7 @@ public class Board extends JFrame {
 		setLocationRelativeTo(null);
 	}
 
-	public void move() {
-		//create boardtile with given number
-		currentSquare += rollDice();
-		invalidate();
-		validate();
-		currentTile = new BoardTile(currentSquare, events, player);
-	}
+	
 	
 	private void lastSquare() {
 		currentSquare = -1;
@@ -127,6 +117,16 @@ public class Board extends JFrame {
 			} else {
 				lastSquare();
 			}
+		}
+		public void move() {
+			//create boardtile with given number
+			currentSquare += rollDice();
+			invalidate();
+			validate();
+			currentTile = new BoardTile(currentSquare, events, player);
+		}
+		public int rollDice(){
+			return ((int) (Math.random()*4)) + 1;
 		}
 	}
 }
