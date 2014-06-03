@@ -31,31 +31,27 @@ public class Main {
 
 
 		events.add(null);
+
+			//parse in Event objects into arraylist events
 			for (int i=1; i<36; i++){
-				z = Integer.parseInt(input.next());
+				z = Integer.parseInt(input.next()); //for ref on txt file, not needed
 				input.nextLine();
 				title = input.nextLine();
 				y = input.nextLine(); //for ref on txt file, not needed
 				int num=0;
 
-				System.out.println(z);
-				System.out.println("");
-
 				for(int j=0; j<3; j++){
 
 					String s1=input.nextLine();
 					String s2=input.nextLine();
-					System.out.println("1  "+title);
-					System.out.println("2  "+y);
-					System.out.println("3  "+s1);
-					System.out.println("4  "+s2);
+
 					int i1=Integer.parseInt(input.next());
 					int i2=Integer.parseInt(input.next());
 					int i3=Integer.parseInt(input.next());
 					int i4=Integer.parseInt(input.next());
 					input.nextLine();
-					System.out.println(i1+ " "+ i2+ " "+i3+" "+i4);
 
+					//parse in the Option objects
 					if (num==0){
 						one = new Option(s1, s2, i1, i2, i3, i4);
 						num++;
@@ -67,12 +63,11 @@ public class Main {
 					}
 				}
 
-				//one = new Option(input.nextLine(), input.nextLine(), input.nextInt(), input.nextInt(), input.nextInt(), input.nextInt() );
-				//two = new Option(input.nextLine(), input.nextLine(), input.nextInt(), input.nextInt(), input.nextInt(), input.nextInt() );
-				//three = new Option(input.nextLine(), input.nextLine(), input.nextInt(), input.nextInt(), input.nextInt(), input.nextInt() );
+				//parse in the Event objects into arraylist events
 				events.add( new Event(title, one, two, three, req) );
 
-					if(i!=35){
+				//stop parsing in at the last object
+				if(i!=35){
 					y=input.nextLine();
 					y=input.nextLine();
 				}
