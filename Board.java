@@ -34,6 +34,37 @@ public class Board extends JFrame {
 		return ((int) (Math.random()*4)) + 1;
 	}
 
+	private void buildInstructions() {
+		JPanel mainPanel = new JPanel();
+		JLabel label1 = new JLabel("Welcome to your senior year at MSJHS.");
+		JLabel label2 = new JLabel("Get through the year, while gathering");
+		JLabel label3 = new JLabel("as many $$$, happiness, and academic");
+		JLabel label4 = new JLabel("points as you can, without getting too");
+		JLabel label5 = new JLabel("many tardies. Are you ready?");
+		
+		mainPanel.setLayout(new BoxLayout(mainPanel, BoxLayout.Y_AXIS));
+		mainPanel.setBorder(BorderFactory.createLineBorder(Color.black));
+		mainPanel.add(label1);
+		mainPanel.add(label2);
+		mainPanel.add(label3);
+		mainPanel.add(label4);
+		mainPanel.add(label5);
+		
+		JPanel secondPanel =  new JPanel();
+		JLabel name = new JLabel("What's your name?");
+		JTextField playerName = new JTextField(15);
+		JButton startGame = new JButton("START");
+		
+		startGame.addActionListener(new startGameListener);
+		
+		secondPanel.add(name);
+		secondPanel.add(playerName);
+		secondPanel.add(startGame);
+		
+		add(mainPanel);
+		add(secondPanel);
+	}
+	
 	private void buildWindow() {
 		JPanel mainPanel = new JPanel();
 		mainPanel.setLayout(new BoxLayout(mainPanel, BoxLayout.Y_AXIS));
@@ -107,6 +138,13 @@ public class Board extends JFrame {
 			} else {
 				lastSquare();
 			}
+		}
+	}
+	
+	private class startGameListener implements ActionListener {
+		
+		public void actionPerformed(ActionEvent e) {
+			Player player = new Player(playerName.getText())
 		}
 	}
 }
