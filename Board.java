@@ -13,13 +13,12 @@ import java.awt.event.*;
 public class Board extends JFrame() {
   
 	private int currentSquare;
-	private Player player=null;
-	private ArrayList<Event> events = null;
+	private Player player;
+	private ArrayList<Event> events;
 
-
-  	public Board(Player a, Events b) {
-  		player = a;
-  		events = b;
+  	public Board(Player p, ArrayList<Event> e) {
+  		player = p;
+  		events = e;
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		buildWindow();
 		setVisible(true);
@@ -33,6 +32,9 @@ public class Board extends JFrame() {
 	private void buildWindow() {
 		JPanel mainPanel = new JPanel();
 		mainPanel.setLayout(new BoxLayout(basic, BoxLayout.Y_AXIS));
+		add(mainPanel);
+		JPanel top = new JPanel();
+		
 		JPanel gridPanel = new JPanel();
 		gridPanel.setBorder(BorderFactory.createEmptyBorder(5, 5, 5, 5));
         	gridPanel.setLayout(new GridLayout(6, 6, 5, 5));
@@ -58,13 +60,11 @@ public class Board extends JFrame() {
 		//button to roll dice
 		//display score and name
 		//title
-		add(mainPanel);
 		
 	}
 
 	private void move() {
 		//create boardtile with given number
-
 	}
 	
 	private void lastSquare() {
