@@ -19,6 +19,7 @@ public class Board extends JFrame {
 	private Player player;
 	private ArrayList<Event> events;
 	private BoardTile currentTile;
+	private JPanel mainPanel;
 
   	public Board(Player p, ArrayList<Event> e) {
   		player = p;
@@ -32,26 +33,26 @@ public class Board extends JFrame {
 	}
 
 	private void buildInstructions() {
-		JPanel mainPanel = new JPanel();
+		JPanel main = new JPanel();
 		JLabel label1 = new JLabel("Welcome to your senior year at MSJHS.");
 		JLabel label2 = new JLabel("Get through the year, while gathering");
 		JLabel label3 = new JLabel("as many $$$, happiness, and academic");
 		JLabel label4 = new JLabel("points as you can, without getting too");
 		JLabel label5 = new JLabel("many tardies. Are you ready?");
 		
-		mainPanel.setLayout(new BoxLayout(mainPanel, BoxLayout.Y_AXIS));
-		mainPanel.setBorder(BorderFactory.createLineBorder(Color.black));
-		mainPanel.add(label1);
-		mainPanel.add(label2);
-		mainPanel.add(label3);
-		mainPanel.add(label4);
-		mainPanel.add(label5);
+		main.setLayout(new BoxLayout(mainPanel, BoxLayout.Y_AXIS));
+		main.setBorder(BorderFactory.createLineBorder(Color.black));
+		main.add(label1);
+		main.add(label2);
+		main.add(label3);
+		main.add(label4);
+		main.add(label5);
 		
 		add(mainPanel);
 	}
 	
 	private void buildWindow() {
-		JPanel mainPanel = new JPanel();
+		mainPanel = new JPanel();
 		mainPanel.setLayout(new BoxLayout(mainPanel, BoxLayout.Y_AXIS));
 		mainPanel.setBorder(new EmptyBorder(new Insets(40, 40, 40, 40)));
 		add(mainPanel);
@@ -112,8 +113,8 @@ public class Board extends JFrame {
 		public void move() {
 			//create boardtile with given number
 			currentSquare += currentRoll;
-			JFrame.invalidate();
-			JFrame.validate();
+			mainPanel.invalidate();
+			mainPanel.validate();
 			currentTile = new BoardTile(currentSquare, events, player);
 		}
 		
