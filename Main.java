@@ -7,7 +7,7 @@ public class Main {
 	static ArrayList<Event> events = new ArrayList<Event>();
 
 	public static void main (String args[])throws FileNotFoundException {
-
+		
 		Scanner console = new Scanner(System.in);
 		System.out.print("Player Name: ");
 		Player player = new Player(console.nextLine());
@@ -30,17 +30,17 @@ public class Main {
 
 		events.add(null);
 		while (input.hasNextLine()) {
-			for (int i=1; i<36; i++) { 
-			title = input.nextLine();
-			y = input.nextLine(); //for ref on txt file, not needed
+			for (int i=1; i<36; i++){
+				title = input.nextLine();
+				y = input.nextLine(); //for ref on txt file, not needed
+				
+				if (y.equals("N"))
+					req=false;
 			
-			if (y.equals("N"))
-				req=false;
-			
-			one = new Option(input.nextLine(), input.nextLine(), input.nextInt(), input.nextInt(), input.nextInt(), input.nextInt() );
-			two = new Option(input.nextLine(), input.nextLine(), input.nextInt(), input.nextInt(), input.nextInt(), input.nextInt() );
-			three = new Option(input.nextLine(), input.nextLine(), input.nextInt(), input.nextInt(), input.nextInt(), input.nextInt() );
-			events.add( new Event(title, one, two, three, req) );
+				one = new Option(input.nextLine(), input.nextLine(), input.nextInt(), input.nextInt(), input.nextInt(), input.nextInt() );
+				two = new Option(input.nextLine(), input.nextLine(), input.nextInt(), input.nextInt(), input.nextInt(), input.nextInt() );
+				three = new Option(input.nextLine(), input.nextLine(), input.nextInt(), input.nextInt(), input.nextInt(), input.nextInt() );
+				events.add( new Event(title, one, two, three, req) );
 			}
 		}
 	}
