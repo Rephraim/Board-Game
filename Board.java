@@ -88,9 +88,8 @@ public class Board extends JFrame() {
 	}
 	
 	private void lastSquare() {
-		//pop up new lastSquare jframe
-		//which displays everything
-		//end game?
+		currentSquare = -1;
+		LastSquare tile = new LastSquare (player);
 	}
 	
 	private class rollListener extends JButton implements ActionListener {
