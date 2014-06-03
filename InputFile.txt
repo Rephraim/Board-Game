@@ -1,0 +1,487 @@
+1
+First day of school!  How many AP classes are you taking?
+Y
+How about no?
+happiness +10, academics -2
+0 0 10 -2
+Not too many…
+academics +2
+0 0 0 2
+Six. AP gov/econ!!! 
+happiness -5, academics +4
+0 0 -5 4
+
+
+2
+8 AM, waking up in the morning. Gotta be fresh, gotta go downstairs. 
+N
+Oh wait, its not Wednesday.
+tardies +1
+1 0 0 0
+Loving the late start.
+happiness +3
+0 0 3 0
+Meeeeeeeeh, school.
+tardies +1, happiness -2
+1 0 -2 0
+
+
+3
+You’ve been craving _______________, so you go out to lunch.  As a result you are late to fifth period.  
+N
+Bagel sandwiches
+tardies +1, $$$ -3, happiness +5
+1 -3 5 0
+Chipotle
+tardies +1, $$$ -5, happiness +5
+1 -5 5 0
+Eastern Winds
+tardies +1, $$$ -4, happiness +5
+1 -4 5 0
+
+
+4
+All your friends are going to Waterworld.  Are you?
+Y
+Hell yeah! 
+$$$ -10, happiness +10
+0 -10 10 0
+Nah, too expensive. 
+happiness -2
+0 0 -2 0
+I think I’ll go to Berkeley instead. 
+tardies +1, $$$ -5, happiness +5
+1 -5 5 0
+
+
+5
+Oh no...You forgot to do that one assignment worth 20% of your grade. You…
+Y
+cram it in during read. 
+happiness -3, academics -2
+0 0 -3 -2
+ask the teacher for an extension. 
+academics -5
+0 0 0 -5
+screw it and play League instead. 
+happiness +5, academics -10
+0 0 5 -10
+
+
+6 
+College applications... do I have to? :(
+Y
+Yes. 
+happiness -10
+0 0 -10 0
+….yes. 
+happiness -15
+0 0 -15 0
+Ohlone for lifeeee.
+happiness +5, academics -5
+0 0 5 -5
+
+
+7
+Hey... there’s a five on the ground!  
+N1
+Whoo, free money!
+$$$ +5, happiness +2
+0 5 2 0
+Time to turn it in to Brandy.
+$$$ +2, happiness +3
+0 2 3 0
+Leave it.
+happiness -2
+0 0 -2 0
+
+
+8
+You’ve been down with the flu for a week.  
+N
+Sick as a dog.
+tardies +5, happiness -2, academics -2
+5 0 -2 -2
+Loving the "midterm flu".
+tardies +5, academics +3
+5 0 0 3
+Party in LA.
+tardies +5, academics -3
+5 0 0 -3
+
+
+9
+Brace yourself. Winter ball is coming!  Got a date?
+Y
+Yeah. 
+$$$ -10, happiness +10
+0 -10 10 0
+Nah, stag 5 life!!!  
+$$$ -5, happiness +5
+0 -5 5 0
+No, gotta stay home and study for one thing or another.  
+happiness -3, academics +3
+0 0 -3 3
+
+
+10
+Economics field trip! Do you go?
+N
+Obviously. 
+$$$ -3, happiness +5
+0 -3 5 0
+No, I can’t miss class. 
+happiness -2, academics +3
+0 0 -2 3
+Heck no, Compsci field trip that day! 
+#brucker4lyfe $$$ -3, happiness +7
+0 -3 7 0
+
+
+11
+Time for Mock Con! Who do you vote for?
+Y
+Jerry Wu. 
+He has candy. $$$ +1
+0 1 0 0 
+Werry Ju. 
+happiness +2
+0 0 2 0
+Vote Radical! 
+happiness +5
+0 0 5 0
+
+
+12
+During winter break you go skiing and...
+N
+Bust your tailbone.
+#ffang #QQ happiness -5
+0 0 -5 0
+Have the time of your life.
+happiness +10, academics -3
+0 0 10 -3
+Crash into a tree. Ow.
+happiness -10
+0 0 -10 0
+
+
+13
+Winter break is for..?
+Y
+Last minute college apps! 
+happiness -2, academics +3
+0 0 -2 3
+Finish a ton of DeviantArt commissions.
+#terri happiness + 3, $$$ + 5, academics -3
+0 5 3 -3
+Flappy Bird!
+happiness -2, academics -3
+0 0 -2 -3
+
+
+14
+You did it, made it to second semester.
+N
+#SSS
+tardies +3, happiness +5
+3 0 5 0
+So muuuuuuch woooooork.
+happiness -3
+0 0 -3 0
+New found hate for projects.
+happiness -3, academics -3
+0 0 -3 -3
+
+15
+You woke up too early, lowering your blood sugar levels.  
+N
+Neeeeed mooooooore sleeeeeeeep.
+happiness -5
+0 0 -5 0
+But first, lemme take a selfie. #selfie
+tardies +1, happiness +3
+1 0 3 0
+Screw the diet. Sugar, sugar, aaaand more sugar.
+happiness -3
+0 0 -3 0
+
+
+16
+Need a little bit more spending money. Do you…
+Y
+ask your parents for money?  
+$$$ +5, happiness  -2 
+0 5 -2 0
+get a job? 
+$$$ + 10, academics -3
+0 10 0 -3
+do nothing? 
+happiness -2
+0 0 -2 0
+
+
+17
+You have to cram for a huge physics midterm. 
+N
+All nighter!
+happiness -10, academics +5
+0 0 -10 5
+Comp Sci is waaaay more important.
+happiness -5, academics -5
+0 0 -5 -5
+#SSS
+happiness +10, academics -15
+0 0 10 -15
+
+
+18
+Ashland’s coming up. Are you going?
+Y
+Of course! Shakespeare ftw! 
+$$$ -3, happiness +5, academics +2
+0 -3 5 2
+Yaaay ice cream! 
+$$$ -4; happiness +5
+0 -4 5 0
+ERWC! #best class
+happiness +2
+0 0 2 0
+
+
+19
+What a nice day it is today….
+Y
+Lets go hang out at Snowflake! 
+tardies +3, happiness +10
+3 0 10 0
+You’ll stay home and have your parents call in sick. 
+tardies +1, happiness +5
+1 0 5 0
+But there’s school today! 
+happiness -2
+0 0 -2 0
+
+
+20
+You go to watch Frozen.
+N
+For the millionth time.
+#werryju happiness +2
+0 0 2 0
+Never again.
+happiness -5
+0 0 -5 0
+Let it go, let it gooooooo~
+happiness +1
+0 0 1 0
+
+
+21
+“Let it Go” gets stuck in your head. AGAIN.
+N
+Goodbye concentration. 
+#ctong academics -2 
+0 0 0 -2
+Make it stoooooop!
+happiness -2, academics -2
+0 0 -2 -2
+Can't hold it back anymore~
+happiness +5, academics -2
+0 0 5 -2
+
+
+22
+Senior Ball is at CA Academy of Sciences!  Are you excited?
+Y
+Yeahhh! Gonna look spiffy with my date!  
+$$$ -20, happiness +10
+0 -20 10 0
+Yay fishies. 
+$$$ -10, happiness +7
+0 -10 7 0
+Ew. #foreveralone
+happiness -2
+0 0 -2 0
+
+
+23
+AP Computer Science project due tomorrow. How much do you more work do you have to do?
+Y
+Do you think I actually started? 
+#SSS happiness -3, academics -10
+0 0 -3 -10
+Submitted it yesterday, fools! 
+happiness +3, academics +5
+0 0 3 5
+What project? My job is to tell you to “close your laptops”. 
+#werryju
+0 0 0 0
+
+
+24
+The legendary Senior Ditch Day has arrived.
+Y
+Party it up at the beach! 
+tardies +5, happiness +10
+5 0 10 0
+My parents made me go to school. 
+#cry happiness -5
+0 0 -5 0
+Go shopping for more ties. 
+#aiden $$$ -3, happiness +5
+0 -3 5 0
+
+
+25
+You got caught up in a Facebook poke war. 
+N
+Victory is the only option.
+happiness +3, academics -3
+0 0 3 -3
+I can't believe I'm doing this.
+happiness -2
+0 0 -2 0
+Ignore all the pokes!
+happiness +3, academics +3
+0 0 3 3
+
+
+26
+You made it to spring break. Got any plans?
+Y
+College visits! 
+#berkeleyclassof2018 $$$ -5
+0 -5 0 0
+Study for APs. 
+#cry happiness -3, academics +5
+0 0 -3 5
+Sleep all day, everyday. 
+happiness +5
+0 0 5 0
+
+
+27
+Oh no! You haven’t turned in any service learning forms and they’re due in 5 minutes. 
+N
+You rush off to N7.
+tardies +1
+1 0 0 0
+Stroll to N7, cause who cares about class.
+tardies +1, academics -2
+1 0 0 -2
+#SSS
+tardies +2
+2 0 0 0
+
+
+28
+Much internet.
+N
+Such grammar.
+academics -3
+0 0 0 -3
+Very doge.
+academics -2
+0 0 0 -2
+I hate this meme.
+tardies +3, $$$ -3, happiness -3, academics -3
+3 -3 -3 -3
+
+
+29
+Ugh! You just can’t get 2048, so you…
+N
+make an AI for it. 
+#werryju happiness + 5
+0 0 5 0
+make a blogpost about it.
+#lewischen happiness +3, academics -2
+0 0 3 -2
+rage quit.  
+happiness -2
+0 0 -2 0
+
+
+30
+You have to decide between going to Yale or Stanford. What do you do?
+Y
+Use a random number generator, obviously. 
+#werryju happiness +5
+0 0 5 0
+Stanford, because Connecticut is super boring. 
+happiness +3
+0 0 3 0
+Yale, because New Haven has delicious pizza. 
+happiness +3
+0 0 3 0
+
+
+31
+Darn, your neighbor was blasting Justin Bieber and One Direction at 3 AM!  
+N
+Ugh.
+#wrongdirection happiness -3
+0 0 -3 0
+I can't hear myself think.
+happiness -2, academics -2
+0 0 -2 -2
+Omg. I love this song.
+#jbforlife happiness +5
+0 0 5 0
+
+
+32
+Entire weekend spent on _______. 
+N
+Tumblr.
+#worth  happiness +5, academics -3
+0 0 5 -3
+Reddit.
+happiness +3, academics -4
+0 0 3 -4
+XKCD.
+happiness +4, academics -2
+0 0 4 -2
+
+
+33
+To project or not to project?
+N
+I hate Shakespeare.
+happiness -2, academics -2
+0 0 -2 -2
+Only 75 lines? Easy peasy.
+happiness +2, academics +2
+0 0 2 2
+I'll just wing it.
+happiness +3, academics -5
+0 0 3 -5
+
+
+34
+Awww shitake mushrooms, it’s finals week.
+Y
+It’s cool, I’ve been studying regularly!  
+academics +5
+0 0 0 5
+….Already? Brb cramming.  
+happiness -2, academics +3
+0 0 -2 3
+Whatever. 
+happiness +3, academics -5
+0 0 3 -5
+
+
+35 
+Grad night at Disneyland! Do you go?
+Y
+Heck yeeees! 
+$$$ -10, happiness +10
+0 -10 10 0
+Woody scares me.
+happiness -3
+0 0 -3 0
+Bye guys, off to Asia.
+$$$ -15, happiness +15
+0 -15 15 0

@@ -11,11 +11,12 @@ public class Main {
 
 		System.out.print("Player Name: ");
 		Player player = new Player( console.next() );
-
+		parseEvents();
+		Board board = new Board(player, events);
 	}
 
 	public int rollDice(){
-		return (int)Math.random()*6 + 1;
+		return (int)Math.random()*4 + 1;
 	}
 
 	//parse in all events as objects into arrayist events

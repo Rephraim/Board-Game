@@ -6,19 +6,20 @@ public class BoardTile extends JFrame {
 	private JButton option1;
 	private JButton option2;
 	private JButton option3;
-	private String d1;
-	private String d2;
-	private String d3;
+	private Option d1;
+	private Option d2;
+	private Option d3;
 	private int tilenumber;
 	private Event event;
 	
-	private Player p;
+	private Player player;
 
-  public BoardTile(int tileNumber, ArrayList<Event> list, Player p) {
+  	public BoardTile(int tileNumber, ArrayList<Event> list, Player p) {
 		event = list.get(tileNumber);
-		d1 = event.getChoice1();
-		d2 = event.getChoice2();
-		d3 = event.getChoice3();
+		player = p;
+		d1 = event.getChoiceA();
+		d2 = event.getChoiceB();
+		d3 = event.getChoiceC();
 		super ("Square" + tilenumber);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		buildWindow();
@@ -27,15 +28,17 @@ public class BoardTile extends JFrame {
 
 	private void buildWindow() {
 		JPanel mainPanel = new JPanel();
-		JLabel a = new JLabel(d1);
-		JLabel b = new JLabel(d2);
-		JLabel c = new JLabel(d3);
+		JLabel description = new JLabel(event.getDescrip());
+		JLabel a = new JLabel(d1.getDescrip);
+		JLabel b = new JLabel(d2.getDescrip);
+		JLabel c = new JLabel(d3.getDescrip);
 		option1 = new JButton("A");
-		option1.addActionListener(new buttonListener);
+		option1.addActionListener(new abuttonListener);
 		option2 = new JButton("B");
-		option1.addActionListener(new buttonListener);
+		option1.addActionListener(new bbuttonListener);
 		option3 = new JButton("C");
-		option1.addActionListener(new buttonListener);
+		option1.addActionListener(new cbuttonListener);
+		mainPanel.add(description);
 		mainPanel.add(a);
 		mainPanel.add(b);
 		mainPanel.add(c);
@@ -46,10 +49,31 @@ public class BoardTile extends JFrame {
 		add(MainPanel);
 	}
 
-	private class buttonListener implements ActionListener {
+	private class abuttonListener implements ActionListener {
 		public void actionPerformed(ActionEvent e) {
-			p.changeTardies(event.getChangeT());
-			p.changeMoney(
-			p.changeHappiness(
-			p.changeAcademics(
+			p.changeTardies(d1.getChangeT());
+			p.changeMoney(d1.getChangeM());
+			p.changeHappiness(d1.getChangeH());
+			p.changeAcademics(d1.getChangeA());
+			JOptionPane.showMessageDialog(null, d1.getStatChanges, "Option A", JOptionPane.PLAIN_MESSAGE);
+		}
+	}
+	private class bbuttonListener implements ActionListener {
+		public void actionPerformed(ActionEvent e) {
+			p.changeTardies(d2.getChangeT());
+			p.changeMoney(d2.getChangeM());
+			p.changeHappiness(d2.getChangeH());
+			p.changeAcademics(d2.getChangeA());
+			JOptionPane.showMessageDialog(null, d2.getStatChanges, "Option B", JOptionPane.PLAIN_MESSAGE);
+		}
+	}
+	private class cbuttonListener implements ActionListener {
+		public void actionPerformed(ActionEvent e) {
+			p.changeTardies(d3.getChangeT());
+			p.changeMoney(d3.getChangeM());
+			p.changeHappiness(d3.getChangeH());
+			p.changeAcademics(d3.getChangeA());
+			JOptionPane.showMessageDialog(null, d3.getStatChanges, "Option C", JOptionPane.PLAIN_MESSAGE);
+		}
+	}
 }
