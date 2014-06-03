@@ -13,8 +13,13 @@ import java.awt.event.*;
 public class Board extends JFrame() {
   
 	private int currentSquare;
+	private Player player=null;
+	private ArrayList<Event> events = null;
 
-  	public Board() {
+
+  	public Board(Player a, Events b) {
+  		player = a;
+  		events = b;
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		buildWindow();
 		setVisible(true);
@@ -59,6 +64,7 @@ public class Board extends JFrame() {
 
 	private void move() {
 		//create boardtile with given number
+
 	}
 	
 	private void lastSquare() {
