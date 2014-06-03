@@ -44,7 +44,7 @@ public class Board extends JFrame() {
 		top.add(Box.createRigidArea(5, 0));
 		top.add(new JLabel("tardies - " + player.getTardies()));
 		top.add(Box.createRigidArea(10, 0));
-		top.add(new JButton("Roll Dice"));
+		top.add(new rollListener("Roll Dice"));
 		JPanel gridPanel = new JPanel();
 		gridPanel.setBorder(BorderFactory.createEmptyBorder(5, 5, 5, 5));
         	gridPanel.setLayout(new GridLayout(6, 6, 5, 5));
@@ -83,7 +83,11 @@ public class Board extends JFrame() {
 		//end game?
 	}
 	
-	private class rollListener implements ActionListener {
+	private class rollListener extends JButton implements ActionListener {
+		public rollListener(String text) {
+			super.setText(text);
+			addActionListener(this);
+		}
 		public void actionPerformed(ActionEvent e) {
 			if (rollDice() + currentSquare < 36) {
 				move();
