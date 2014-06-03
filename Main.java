@@ -19,31 +19,30 @@ public class Main {
 	//parse in all events as objects into arrayist events
 	
 	public static void parseEvents() throws FileNotFoundException{
-			File file = new File("InputFile.txt");
-			Scanner input = new Scanner(file);
-			Event e=null;
-			Option one=null;
-			Option two=null;
-			Option three=null;
-			int x=0; //filler
-			String y=null; //filler
-			String title=null;
-			boolean req=true;
+		File file = new File("InputFile.txt");
+		Scanner input = new Scanner(file);
+		Event e=null;
+		Option one=null;
+		Option two=null;
+		Option three=null;
+		int x=0; //filler
+		String y=null; //filler
+		String title=null;
+		boolean req=true;
 
-			events.add(null);
-			for (int i=1; i<36; i++){
-					x = input.nextInt(); //for ref on txt file, not needed
-					title = input.nextLine();
-					y = input.nextLine(); //for ref on txt file, not needed
-					one = new Option(input.nextLine(), input.nextLine(), input.nextInt(), input.nextInt(), input.nextInt(), input.nextInt() );
-					two = new Option(input.nextLine(), input.nextLine(), input.nextInt(), input.nextInt(), input.nextInt(), input.nextInt() );
-					three = new Option(input.nextLine(), input.nextLine(), input.nextInt(), input.nextInt(), input.nextInt(), input.nextInt() );
-					events.add( new Event(title, one, two, three, req) );
-			}
-
-
-
+		events.add(null);
+		for (int i=1; i<36; i++){
+			x = input.nextInt(); //for ref on txt file, not needed
+			title = input.nextLine();
+			req = input.nextLine(); //for ref on txt file, not needed
+			
+			if (req.equals("N"))
+				req=false;
+			
+			one = new Option(input.nextLine(), input.nextLine(), input.nextInt(), input.nextInt(), input.nextInt(), input.nextInt() );
+			two = new Option(input.nextLine(), input.nextLine(), input.nextInt(), input.nextInt(), input.nextInt(), input.nextInt() );
+			three = new Option(input.nextLine(), input.nextLine(), input.nextInt(), input.nextInt(), input.nextInt(), input.nextInt() );
+			events.add( new Event(title, one, two, three, req) );
+		}
 	}
-
-
 }
