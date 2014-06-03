@@ -3,15 +3,14 @@ import java.io.*;
 
 public class Main {
 
-	static Scanner console=  new Scanner(System.in);
-
 	//arraylist of all events
 	static ArrayList<Event> events = new ArrayList<Event>();
 
 	public static void main (String args[])throws FileNotFoundException {
 
+		Scanner console = new Scanner(System.in);
 		System.out.print("Player Name: ");
-		Player player = new Player( console.next() );
+		Player player = new Player(console.next());
 		parseEvents();
 		Board board = new Board(player, events);
 	}
