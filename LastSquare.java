@@ -7,7 +7,7 @@ public class LastSquare extends JFrame {
   
   	public LastSquare(Player player) {
 		p = player;
-		super ("Finale");
+		super("Finale");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		buildWindow();
 		setVisible(true);
@@ -17,6 +17,7 @@ public class LastSquare extends JFrame {
 		JPanel mainPanel = new JPanel();
 		JLabel description = new JLabel("You made it! You finished senior year, but did you graduate?");
 		JLabel aa = new JLabel("Tardies: " + p.getTardies());
+		aa.setFont(aa.getFont().deriveFont(Font.BOLD));
 		if (p.getTardies() < 10) {
 		  JLabel a = new JLabel("Wow, what kind of senior are you?");
 		} else if (p.getTardies() < 20) {
@@ -25,6 +26,7 @@ public class LastSquare extends JFrame {
 		  JLabel a = new JLabel("Sorry dude, they’re not letting you walk at graduation because of your horrendous attendance record.");
 		}
 		JLabel ba = new JLabel("Money: " + p.getMoney());
+		ba.setFont(ba.getFont().deriveFont(Font.BOLD));
 		if (p.getMoney() < 10) {
 		  JLabel b = new JLabel("You have literally no money. Maybe you should drop college for a garbage-truck-driving job. I heard they pay pretty well.");
 		} else if (p.getMoney() < 30) {
@@ -35,6 +37,7 @@ public class LastSquare extends JFrame {
 		  JLabel b = new JLabel("Pfffft, loans?  You’re loaded!");	
 		}
 		JLabel ca = new JLabel("Happiness: " + p.getHappiness());
+		ca.setFont(ca.getFont().deriveFont(Font.BOLD));
 		if (p.getHappiness() < 10) {
 		  JLabel c = new JLabel("You cry yourself to sleep every night while scrolling through Tumblr.");
 		} else if (p.getMoney() < 30) {
@@ -45,6 +48,7 @@ public class LastSquare extends JFrame {
 		  JLabel c = new JLabel("A+ for having an awesome life. #yoloswag");	
 		}
 		JLabel da = new JLabel("Academics: " + p.getAcademics());
+		da.setFont(da.getFont().deriveFont(Font.BOLD));
 		if (p.getAcademics() < 25) {
 		  JLabel d = new JLabel("You don’t have enough units to graduate. I guess you have to go through the fire again….");
 		} else if (p.getAcademics() < 50) {
@@ -63,8 +67,9 @@ public class LastSquare extends JFrame {
 		mainPanel.add(d);
 		if (p.getAcademics() >= 25) {
 			JLabel yes = new JLabel("Congratulations!");
+			yes.setFont(yes.getFont().deriveFont(Font.BOLD));
 			mainPanel.add(yes);
 		}
-		add(MainPanel);
+		add(mainPanel);
 	}
 }
