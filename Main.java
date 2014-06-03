@@ -34,9 +34,9 @@ public class Main {
 		for (int i=1; i<36; i++){
 			x = input.nextInt(); //for ref on txt file, not needed
 			title = input.nextLine();
-			req = input.nextLine(); //for ref on txt file, not needed
+			y = input.nextLine(); //for ref on txt file, not needed
 			
-			if (req.equals("N"))
+			if (y.equals("N"))
 				req=false;
 			
 			one = new Option(input.nextLine(), input.nextLine(), input.nextInt(), input.nextInt(), input.nextInt(), input.nextInt() );
