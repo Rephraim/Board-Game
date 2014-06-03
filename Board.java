@@ -28,7 +28,6 @@ public class Board extends JFrame {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		buildInstructions();
 		buildWindow();
-		setVisible(true);
 		//MISC OTHER CONSTRUCTION!!!!!!!!!!!!!!!!!!!!!!!
 	}
 
@@ -40,15 +39,16 @@ public class Board extends JFrame {
 		JLabel label4 = new JLabel("points as you can, without getting too");
 		JLabel label5 = new JLabel("many tardies. Are you ready?");
 		
-		main.setLayout(new BoxLayout(mainPanel, BoxLayout.Y_AXIS));
+		main.setLayout(new BoxLayout(main, BoxLayout.Y_AXIS));
 		main.setBorder(BorderFactory.createLineBorder(Color.black));
 		main.add(label1);
 		main.add(label2);
 		main.add(label3);
 		main.add(label4);
 		main.add(label5);
-		
-		add(mainPanel);
+		setLocationRelativeTo(null);
+		setSize(300,200);
+		add(main);
 	}
 	
 	private void buildWindow() {
@@ -93,7 +93,7 @@ public class Board extends JFrame {
         	mainPanel.add(gridPanel);
 		mainPanel.add(new JLabel("Player " + player.getName()));
 		if (currentSquare != -1){
-			mainPanel.add(new JLabel("You are at square #" + (currentSquare)));
+			mainPanel.add(new JLabel("You are at square #" + (currentSquare + 1)));
 		} else {
 			mainPanel.add(new JLabel("You are at square #36"));
 		}
@@ -102,6 +102,7 @@ public class Board extends JFrame {
 		//display score and name
 		//title
 		setTitle("Senioritis: the Game");
+		setSize(700, 500);
 		setLocationRelativeTo(null);
 	}
 	
@@ -120,6 +121,8 @@ public class Board extends JFrame {
 			mainPanel.invalidate();
 			mainPanel.validate();
 			currentTile = new BoardTile(currentSquare, events, player);
+			mainPanel.revalidate();
+			mainPanel.repaint();
 		}
 		
 		public int rollDice(){
