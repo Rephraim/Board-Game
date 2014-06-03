@@ -106,20 +106,25 @@ public class Board extends JFrame {
 	}
 
 	private class rollListener implements ActionListener {
+		
+		private int currentRoll;
+		
 		public void move() {
 			//create boardtile with given number
-			currentSquare += rollDice();
-			invalidate();
-			validate();
+			currentSquare += currentRoll;
+			JFrame.invalidate();
+			JFrame.validate();
 			currentTile = new BoardTile(currentSquare, events, player);
 		}
 		
 		public int rollDice(){
-			return ((int) (Math.random()*4)) + 1;
+			currentRoll =((int) (Math.random()*4)) + 1;
+			return currentRoll;
 		}
 		
 		public void actionPerformed(ActionEvent e) {
 			if (currentSquare == -1) {
+				lastSquare();
  			} else if (rollDice() + currentSquare < 36) {
 				move();
 			} else {
