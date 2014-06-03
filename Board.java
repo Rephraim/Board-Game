@@ -27,6 +27,7 @@ public class Board extends JFrame() {
 
 	private void buildWindow() {
 		JPanel mainPanel = new JPanel();
+		mainPanel.setLayout(new BoxLayout(basic, BoxLayout.Y_AXIS));
 		JPanel gridPanel = new JPanel();
 		gridPanel.setBorder(BorderFactory.createEmptyBorder(5, 5, 5, 5));
         	gridPanel.setLayout(new GridLayout(6, 6, 5, 5));
@@ -47,7 +48,7 @@ public class Board extends JFrame() {
         			gridPanel.add(new JButton(buttons[i][j]));
         		}
         	}
-        	add(gridPanel);
+        	mainPanel.add(gridPanel)
 		//grid of buttons
 		//button to roll dice
 		//display score and name
