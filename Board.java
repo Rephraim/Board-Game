@@ -20,7 +20,12 @@ public class Board extends JFrame {
 	private ArrayList<Event> events;
 	private BoardTile currentTile;
 	private JPanel mainPanel;
-
+	private JLabel labelh = new JLabel();
+	private JLabel labela = new JLabel();
+	private JLabel labelt = new JLabel();
+	private JLabel labelm = new JLabel();
+	private JLabel labeltile = new JLabel();
+	
   	public Board(Player p, ArrayList<Event> e) {
   		player = p;
   		events = e;
@@ -64,45 +69,51 @@ public class Board extends JFrame {
 		add(mainPanel);
 		JPanel top = new JPanel();
 		top.setLayout(new BoxLayout(top, BoxLayout.X_AXIS));
-		top.add(new JLabel(":) - " + player.getHappiness()));
+		labelh.setText(":) - " + player.getHappiness());
+		labela.setText("academics - " + player.getAcademics());
+		labelt.setText("tardies - " + player.getTardies());
+		labelm.setText("$$$ - " + player.getMoney());
+		top.add(labelh);
 		top.add(Box.createRigidArea(new Dimension(5, 0)));
-		top.add(new JLabel("academics - " + player.getAcademics()));
+		top.add(labela);
 		top.add(Box.createRigidArea(new Dimension(5, 0)));
-		top.add(new JLabel("$$$ - " + player.getMoney()));
+		top.add(labelm);
 		top.add(Box.createRigidArea(new Dimension(5, 0)));
-		top.add(new JLabel("tardies - " + player.getTardies()));
+		top.add(labelt);
 		top.add(Box.createRigidArea(new Dimension(10, 0)));
 		JButton rollDice = new JButton("Roll Dice");
 		rollDice.addActionListener(new rollListener());
 		top.add(rollDice);
 		JPanel gridPanel = new JPanel();
 		gridPanel.setBorder(BorderFactory.createEmptyBorder(5, 5, 5, 5));
-        	gridPanel.setLayout(new GridLayout(6, 6, 5, 5));
-        	String[][] buttons = new String[6][6];
-        	int count = 1;
-        	for (int i = 0; i < 6; i++) {
-        		for (int j = 0; j < 6; j++) {
-        			if(i % 2 == 0) {
-        				buttons[i][j] = Integer.toString(count);
-        			} else {
-        				buttons[i][5-j] = Integer.toString(count);
-        			}
-        			count++;
+        gridPanel.setLayout(new GridLayout(6, 6, 5, 5));
+        String[][] buttons = new String[6][6];
+        int count = 1;
+        for (int i = 0; i < 6; i++) {
+        	for (int j = 0; j < 6; j++) {
+        		if(i % 2 == 0) {
+        			buttons[i][j] = Integer.toString(count);
+        		} else {
+        			buttons[i][5-j] = Integer.toString(count);
         		}
+        		count++;
         	}
-        	for (int i = 0; i < 6; i++) {
-        		for (int j = 0; j < 6; j++) {
-        			gridPanel.add(new JButton(buttons[i][j]));
-        		}
-        	}
-        	mainPanel.add(top);
-        	mainPanel.add(gridPanel);
+        }
+        for (int i = 0; i < 6; i++) {
+			for (int j = 0; j < 6; j++) {
+        	/* for (int j = 0; j < 6; j++) { */
+        		gridPanel.add(new JButton(buttons[i][j]));
+			}
+        }
+        mainPanel.add(top);
+        mainPanel.add(gridPanel);
 		mainPanel.add(new JLabel("Player " + player.getName()));
 		if (currentSquare != -1){
-			mainPanel.add(new JLabel("You are at square #" + (currentSquare + 1)));
+			labeltile.setText("You are at square #" + (currentSquare));
 		} else {
-			mainPanel.add(new JLabel("You are at square #36"));
+			labeltile.setText("You are at square #36");
 		}
+		mainPanel.add(labeltile);
 		//grid of buttons
 		//button to roll dice
 		//display score and name
@@ -117,18 +128,28 @@ public class Board extends JFrame {
  		LastSquare tile = new LastSquare (player);
 	}
 
+	private void update() {
+		labelh.setText(":) - " + player.getHappiness());
+		labela.setText("academics - " + player.getAcademics());
+		labelt.setText("tardies - " + player.getTardies());
+		labelm.setText("$$$ - " + player.getMoney());
+		if (currentSquare != -1){
+			labeltile.setText("You are at square #" + (currentSquare));
+		} else {
+			labeltile.setText("You are at square #36");
+		}
+	}
+	
 	private class rollListener implements ActionListener {
 
 		private int currentRoll;
 
 		public void move() {
+			
 			//create boardtile with given number
 			currentSquare += currentRoll;
-			mainPanel.invalidate();
-			mainPanel.validate();
 			currentTile = new BoardTile(currentSquare, events, player);
-			mainPanel.revalidate();
-			mainPanel.repaint();
+			
 		}
 
 		public int rollDice(){
@@ -137,6 +158,8 @@ public class Board extends JFrame {
 		}
 
 		public void actionPerformed(ActionEvent e) {
+			update();
+			mainPanel.revalidate();
 			if (currentSquare == -1) {
 				lastSquare();
  			} else if (rollDice() + currentSquare < 36) {
