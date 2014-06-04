@@ -80,7 +80,7 @@ public class LastSquare extends JFrame {
 			mainPanel.add(yes);
 		}
 		add(mainPanel);
-		setSize(300,200);
+		setSize(700,300);
 		setLocationRelativeTo(null);
 	}
 }
