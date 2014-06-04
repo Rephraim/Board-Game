@@ -119,7 +119,7 @@ public class Board extends JFrame {
 		//display score and name
 		//title
 		setTitle("Senioritis: the Game");
-		setSize(700, 500);
+		setSize(800, 600);
 		setLocationRelativeTo(null);
 	}
 
