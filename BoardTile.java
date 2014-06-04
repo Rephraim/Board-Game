@@ -39,7 +39,7 @@ public class BoardTile extends JFrame {
 		JPanel buttons = new JPanel();
 		JPanel optionPanel = new JPanel();
 		mainPanel.setLayout(new BoxLayout(mainPanel, BoxLayout.Y_AXIS));
-		mainPanel.setBorder(new EmptyBorder(new Insets(40,40,40,40)));
+		mainPanel.setBorder(new EmptyBorder(new Insets(20,20,20,20)));
 		options.setLayout(new BoxLayout(options, BoxLayout.Y_AXIS));
 		buttons.setLayout(new BoxLayout(buttons, BoxLayout.Y_AXIS));
 		optionPanel.setLayout(new BoxLayout(optionPanel, BoxLayout.X_AXIS));
@@ -54,6 +54,7 @@ public class BoardTile extends JFrame {
 		option3 = new JButton("C");
 		option3.addActionListener(new cbuttonListener());
 		mainPanel.add(description);
+		mainPanel.add(Box.createRigidArea(new Dimension(0,5)));
 		options.add(a);
 		options.add(Box.createRigidArea(new Dimension(0,10)));
 		options.add(b);
@@ -67,7 +68,7 @@ public class BoardTile extends JFrame {
 		optionPanel.add(buttons);
 		mainPanel.add(optionPanel);
 		setLocationRelativeTo(null);
-		setSize(700,250);
+		setSize(800,250);
 		add(mainPanel);
 	}
 
