@@ -15,7 +15,7 @@ public class BoardTile extends JFrame {
 	private int number;
 	private Event event;
 	private JFrame frame;
-
+	
 	private Player player;
 
   	public BoardTile(int tileNumber, ArrayList<Event> list, Player p) {
@@ -27,7 +27,7 @@ public class BoardTile extends JFrame {
 		opt1 = event.getChoiceA();
 		opt2 = event.getChoiceB();
 		opt3 = event.getChoiceC();
-
+		
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		buildWindow();
 		setVisible(true);
@@ -44,21 +44,21 @@ public class BoardTile extends JFrame {
 		buttons.setLayout(new BoxLayout(buttons, BoxLayout.Y_AXIS));
 		optionPanel.setLayout(new BoxLayout(optionPanel, BoxLayout.X_AXIS));
 		JLabel description = new JLabel(event.getDescrip());
-		//JLabel a = new JLabel("A. " + opt1.getDescrip());
-		//JLabel b = new JLabel("B. " + opt2.getDescrip());
-		//JLabel c = new JLabel("C. " + opt3.getDescrip());
-		option1 = new JButton("A: " + opt1.getDescrip());
+		JLabel a = new JLabel("A. " + opt1.getDescrip());
+		JLabel b = new JLabel("B. " + opt2.getDescrip());
+		JLabel c = new JLabel("C. " + opt3.getDescrip());
+		option1 = new JButton("A");
 		option1.addActionListener(new abuttonListener());
-		option2 = new JButton("B: " + opt2.getDescrip());
+		option2 = new JButton("B");
 		option2.addActionListener(new bbuttonListener());
-		option3 = new JButton("C: " + opt3.getDescrip());
+		option3 = new JButton("C");
 		option3.addActionListener(new cbuttonListener());
 		mainPanel.add(description);
-		//options.add(a);
+		options.add(a);
 		options.add(Box.createRigidArea(new Dimension(0,10)));
-		//options.add(b);
+		options.add(b);
 		options.add(Box.createRigidArea(new Dimension(0,10)));
-		//options.add(c);
+		options.add(c);
 		buttons.add(option1);
 		buttons.add(option2);
 		buttons.add(option3);
