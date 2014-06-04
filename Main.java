@@ -1,5 +1,6 @@
 import java.util.*;
 import java.io.*;
+import javax.swing.*;
 
 public class Main {
 
@@ -7,12 +8,16 @@ public class Main {
 	static ArrayList<Event> events = new ArrayList<Event>();
 
 	public static void main (String args[])throws FileNotFoundException {
-		
 		Scanner console = new Scanner(System.in);
 		System.out.print("Player Name: ");
-		Player player = new Player(console.nextLine());
+		final Player player = new Player(console.nextLine());
 		parseEvents();
-		Board board = new Board(player, events);
+		SwingUtilities.invokeLater(new Runnable() {
+			public void run() {
+				Board board = new Board(player, events);
+				board.setVisible(true);
+			}
+		});
 	}
 
 	//parse in all events as objects into arrayist events
@@ -31,10 +36,8 @@ public class Main {
 
 
 		events.add(null);
-
-			//parse in Event objects into arraylist events
 			for (int i=1; i<36; i++){
-				z = Integer.parseInt(input.next()); //for ref on txt file, not needed
+				z = Integer.parseInt(input.next());
 				input.nextLine();
 				title = input.nextLine();
 				y = input.nextLine(); //for ref on txt file, not needed
@@ -44,14 +47,12 @@ public class Main {
 
 					String s1=input.nextLine();
 					String s2=input.nextLine();
-
 					int i1=Integer.parseInt(input.next());
 					int i2=Integer.parseInt(input.next());
 					int i3=Integer.parseInt(input.next());
 					int i4=Integer.parseInt(input.next());
 					input.nextLine();
 
-					//parse in the Option objects
 					if (num==0){
 						one = new Option(s1, s2, i1, i2, i3, i4);
 						num++;
@@ -63,11 +64,12 @@ public class Main {
 					}
 				}
 
-				//parse in the Event objects into arraylist events
+				//one = new Option(input.nextLine(), input.nextLine(), input.nextInt(), input.nextInt(), input.nextInt(), input.nextInt() );
+				//two = new Option(input.nextLine(), input.nextLine(), input.nextInt(), input.nextInt(), input.nextInt(), input.nextInt() );
+				//three = new Option(input.nextLine(), input.nextLine(), input.nextInt(), input.nextInt(), input.nextInt(), input.nextInt() );
 				events.add( new Event(title, one, two, three, req) );
 
-				//stop parsing in at the last object
-				if(i!=35){
+					if(i!=35){
 					y=input.nextLine();
 					y=input.nextLine();
 				}
