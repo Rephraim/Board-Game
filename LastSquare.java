@@ -2,6 +2,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 import java.util.*;
+import javax.swing.border.*;
 
 public class LastSquare extends JFrame {
   	private Player p;
@@ -16,6 +17,7 @@ public class LastSquare extends JFrame {
 	
 	private void buildWindow() {
 		JPanel mainPanel = new JPanel();
+		mainPanel.setBorder(new EmptyBorder(new Insets(15,15,15,15)));
 		JLabel description = new JLabel("You made it! You finished senior year, but did you graduate?");
 		JLabel aa = new JLabel("Tardies: " + p.getTardies());
 		aa.setFont(aa.getFont().deriveFont(Font.BOLD));
@@ -62,6 +64,7 @@ public class LastSquare extends JFrame {
 		} else {
 		  d.setText("Good job, you graduated!");	
 		}
+		mainPanel.setLayout(new BoxLayout(mainPanel, BoxLayout.Y_AXIS));
 		mainPanel.add(description);
 		mainPanel.add(aa);
 		mainPanel.add(a);
@@ -77,5 +80,7 @@ public class LastSquare extends JFrame {
 			mainPanel.add(yes);
 		}
 		add(mainPanel);
+		setSize(300,200);
+		setLocationRelativeTo(null);
 	}
 }
