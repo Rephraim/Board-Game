@@ -54,7 +54,7 @@ public class Board extends JFrame {
 		main.add(label3);
 		main.add(label4);
 		main.add(label5);
-		frame.setSize(300,200);
+		frame.setSize(300,180);
 		frame.add(main);
 		frame.setVisible(true);
 		frame.setTitle("Instructions");
